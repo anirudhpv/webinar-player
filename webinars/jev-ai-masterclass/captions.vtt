@@ -1,0 +1,4089 @@
+WEBVTT
+
+1
+00:00:23.030 --> 00:00:33.469
+100x Engineers: Awesome. Welcome to HONETEX Engineers. We will be starting in exactly next five minutes. I'll request you to grab a cup of coffee or a piece of pen and paper that will help you take notes.
+
+2
+00:00:33.730 --> 00:00:37.129
+100x Engineers: I'll see you in the next 5 minutes. We're just waiting for a few more folks.
+
+7
+00:09:10.270 --> 00:09:13.369
+100x Engineers: Awesome! Welcome to MONETX Engineers I hope you guys can hear me.
+
+9
+00:09:13.830 --> 00:09:14.349
+100x Engineers: Got to the.
+
+11
+00:09:14.950 --> 00:09:18.469
+100x Engineers: So, this is basically my nerd way of understanding.
+
+13
+00:09:19.470 --> 00:09:22.890
+100x Engineers: So on a scale of 1 to 10, how do you feel? Just give a number.
+
+15
+00:09:30.380 --> 00:09:30.800
+100x Engineers: also.
+
+19
+00:09:44.830 --> 00:09:47.770
+100x Engineers: That's why the music is still on so that we can keep the vibe going on.
+
+21
+00:09:48.620 --> 00:09:49.480
+100x Engineers: While we're taking the score.
+
+23
+00:09:55.960 --> 00:09:56.620
+100x Engineers: Oh.
+
+24
+00:10:00.170 --> 00:10:01.800
+100x Engineers: Awesome! Is it better?
+
+25
+00:10:04.040 --> 00:10:06.980
+100x Engineers: I was just asking, how are you guys feeling on a scale of 1 to 10?
+
+26
+00:10:07.850 --> 00:10:14.379
+100x Engineers: There's a poll which is gonna be on your screen, so just tell me how you're feeling, and we'll get the Vibe of this room right now.
+
+27
+00:10:19.810 --> 00:10:22.870
+100x Engineers: Awesome, we have… folks, can you get the results?
+
+28
+00:11:03.910 --> 00:11:09.260
+100x Engineers: So, first of all, welcome to the Hannex Engineers Masterclass. Today, we'll be learning about
+
+29
+00:11:09.430 --> 00:11:13.379
+100x Engineers: Very interesting model. This is called Jev AI, and
+
+30
+00:11:13.680 --> 00:11:18.699
+100x Engineers: Before I start, I'll give you a quick introduction of mine, and then I also ask two things about you.
+
+31
+00:11:18.790 --> 00:11:24.429
+100x Engineers: What do you do and where are you from? My name is Siddhant Goswami and I'm the co-founder and CTO of 100X Engineers.
+
+32
+00:11:24.460 --> 00:11:40.879
+100x Engineers: I've been teaching people from last three years about applied AI. There's a first workshop which I did right after when ChatGPT launched, and I thought I could help other engineers to learn about AI. And since that day, I think I've been taking lectures and sessions every single day.
+
+33
+00:11:41.280 --> 00:12:00.809
+100x Engineers: We have trained over 80,000 people across the world, and we have also partnered with companies like OpenAI and Meta to design their official courses. Previously, I was working as a founding engineer, and also started two of my companies, which got acquired by an academy. So, I have some experience in startups, building product, and teaching people.
+
+34
+00:12:02.050 --> 00:12:08.040
+100x Engineers: This… Webinar will have Three sections. This is the today's agenda.
+
+35
+00:12:08.440 --> 00:12:12.819
+100x Engineers: We'll talk about the masterclass. How do we build things with Jev AI? What is this?
+
+36
+00:12:12.930 --> 00:12:14.370
+100x Engineers: Whole new model.
+
+37
+00:12:14.580 --> 00:12:16.600
+100x Engineers: How this is helpful for all of you.
+
+38
+00:12:17.600 --> 00:12:23.870
+100x Engineers: This session's gonna last around somewhere 60 to 80 minutes. I wish I could spend more time here, because
+
+39
+00:12:24.100 --> 00:12:27.850
+100x Engineers: I think even that is gonna be, like, less,
+
+40
+00:12:28.260 --> 00:12:31.780
+100x Engineers: About the possibilities of this AI tool is, like, so fascinating.
+
+41
+00:12:32.050 --> 00:12:36.500
+100x Engineers: After that, I'll talk about… One of the things which we do here.
+
+42
+00:12:37.170 --> 00:12:52.699
+100x Engineers: We run a 6-month-long applied AI program, and at the end, I'll take the questions. So, one request to all of you, if you have any questions. While I'm teaching you, just write it down in the Q&A box. I will come at the end, and I'll try to answer as many questions as possible.
+
+43
+00:12:56.420 --> 00:12:58.920
+100x Engineers: I give you introduction, I just need two things from you.
+
+44
+00:12:59.220 --> 00:13:01.030
+100x Engineers: What do you do, and where are you from?
+
+45
+00:13:01.440 --> 00:13:09.040
+100x Engineers: By the way, I'm joining from Bangalore, so… Let's see if I can…
+
+46
+00:13:13.230 --> 00:13:13.950
+100x Engineers: What's up?
+
+47
+00:13:14.270 --> 00:13:16.540
+100x Engineers: Let me keep the mic closer to this.
+
+48
+00:13:20.560 --> 00:13:21.740
+100x Engineers: Is it better now?
+
+49
+00:13:23.210 --> 00:13:25.300
+100x Engineers: Awesome, we have folks from…
+
+50
+00:13:28.850 --> 00:13:32.510
+100x Engineers: Hyderabad, Delhi… Colombo.
+
+51
+00:13:45.030 --> 00:13:49.569
+100x Engineers: Awesome. Thanks, guys. I think I got, like, very interesting this time.
+
+52
+00:13:49.730 --> 00:13:57.069
+100x Engineers: I could see majority of you are engineers, Data scientists, founders, students.
+
+53
+00:13:58.110 --> 00:13:59.670
+100x Engineers: Lot of techies in the house.
+
+54
+00:13:59.950 --> 00:14:05.780
+100x Engineers: Awesome. I'll try to, like, make this webinar more personalized to folks who have joined, so…
+
+55
+00:14:07.330 --> 00:14:17.979
+100x Engineers: everything which I'll teach you, by the way, can be directly applicable to even if you are not a coder, but I think, today's session's gonna be, like, something which you can apply,
+
+56
+00:14:19.120 --> 00:14:27.800
+100x Engineers: As an engineer, And hopefully, in the next 6 months, this might become the way how you think, and also how you build AI applications.
+
+57
+00:14:28.930 --> 00:14:31.370
+100x Engineers: Awesome. Thank you so much for sharing this.
+
+58
+00:14:36.060 --> 00:14:43.550
+100x Engineers: As I promised, this webinar is based on a real workflow. What I have done and what we do at Index is
+
+59
+00:14:44.080 --> 00:14:53.879
+100x Engineers: Since last three years, whenever a new model gets launched, new tool gets launched, we do our extensive R&D. So we have a whole research and development group here.
+
+60
+00:14:53.880 --> 00:15:04.330
+100x Engineers: And our job is only one thing that is this tool, is this model helpful for somebody who is building a production-ready application? And then can we create some impact?
+
+61
+00:15:04.400 --> 00:15:14.210
+100x Engineers: Make it useful for our work. And this was a test done for a new tool. Before I share more about the tool, I want to give you the case study.
+
+62
+00:15:14.490 --> 00:15:17.119
+100x Engineers: Also, the example where I have tested.
+
+63
+00:15:17.620 --> 00:15:22.850
+100x Engineers: I've anonymized the exact name and details for this example, but the…
+
+64
+00:15:23.070 --> 00:15:27.629
+100x Engineers: The business and the person who ran this thing is real.
+
+65
+00:15:29.810 --> 00:15:32.370
+100x Engineers: Meet one of my students, this is Arav.
+
+66
+00:15:33.800 --> 00:15:35.940
+100x Engineers: Arora works as a business analyst.
+
+67
+00:15:36.070 --> 00:15:37.979
+100x Engineers: At a mid-size IT company.
+
+68
+00:15:38.330 --> 00:15:43.860
+100x Engineers: And, his client is one of the grocery can be stored.
+
+69
+00:15:46.590 --> 00:15:52.259
+100x Engineers: This client delivers… Products to 60 plus restaurants kitchen in Bangalore.
+
+70
+00:15:52.790 --> 00:15:55.399
+100x Engineers: And every day, or every Friday.
+
+71
+00:15:55.590 --> 00:16:00.259
+100x Engineers: Arav receives 400 invoices. So these are the bills which…
+
+72
+00:16:00.360 --> 00:16:04.830
+100x Engineers: About all the things that… These guys have purchased.
+
+73
+00:16:05.120 --> 00:16:09.349
+100x Engineers: And now they're gonna send it and source it to their kitchens.
+
+74
+00:16:10.090 --> 00:16:18.069
+100x Engineers: So the job of this guy, who is the business analyst, is to… Ask this question 400 times.
+
+75
+00:16:18.360 --> 00:16:26.620
+100x Engineers: Let… Does this bill, what we have received, Is actually what we ordered.
+
+76
+00:16:34.300 --> 00:16:39.429
+100x Engineers: Just to give you a picture of what kind of invoices, what kind of bills Arora receives.
+
+77
+00:16:40.240 --> 00:16:44.229
+100x Engineers: On every Friday. I'll zoom in a little bit, so that you can read the invoice.
+
+78
+00:16:45.230 --> 00:16:48.700
+100x Engineers: On the left-hand side, I have a purchase order.
+
+79
+00:16:50.100 --> 00:16:52.190
+100x Engineers: So the most basic one.
+
+80
+00:16:52.300 --> 00:17:03.869
+100x Engineers: Tomato A grade, 10 KGs, 42. Coriander bunch, onion. Total purchase order was 1,440 Indian rupees.
+
+81
+00:17:04.859 --> 00:17:07.229
+100x Engineers: On the right side.
+
+82
+00:17:07.369 --> 00:17:13.750
+100x Engineers: We have the invoice from the vendor from which this company has bought these tomatoes and coriander.
+
+83
+00:17:15.430 --> 00:17:23.929
+100x Engineers: You have exactly five seconds, and I want you to be in the same shoes of this person so that you can first of all feel the problem and then hope.
+
+84
+00:17:24.069 --> 00:17:26.120
+100x Engineers: You'll be able to solve this problem as well.
+
+85
+00:17:27.030 --> 00:17:32.220
+100x Engineers: In 5 seconds, just tell me if these 2 invoices match.
+
+86
+00:17:34.350 --> 00:17:42.499
+100x Engineers: Did we get the same bill for the orders or for the items that we have placed? Just let me know your answer in the chat. Quickly, five seconds.
+
+87
+00:17:42.630 --> 00:17:44.090
+100x Engineers: Yes, no, yes, no?
+
+88
+00:17:46.150 --> 00:17:47.189
+100x Engineers: Do they match?
+
+89
+00:17:47.690 --> 00:17:48.690
+100x Engineers: Awesome.
+
+90
+00:17:49.010 --> 00:17:50.320
+100x Engineers: Invoices more.
+
+91
+00:17:56.230 --> 00:18:01.480
+100x Engineers: I'm glad all of you had a good eye to judge these mash do not match.
+
+92
+00:18:02.260 --> 00:18:03.879
+100x Engineers: But imagine about Arav.
+
+93
+00:18:04.650 --> 00:18:07.090
+100x Engineers: He's doing this every single day.
+
+94
+00:18:07.250 --> 00:18:10.459
+100x Engineers: With all the other things that he has on his plate.
+
+95
+00:18:11.030 --> 00:18:16.759
+100x Engineers: And there's, like, 400s of invoices like this. This is the most easiest one which I showed you, but…
+
+96
+00:18:16.870 --> 00:18:23.429
+100x Engineers: Every invoice will be different. It'll have, like, maybe not just 4 things, but could be, like, 400 things as well.
+
+97
+00:18:23.900 --> 00:18:32.740
+100x Engineers: And then it becomes a very painstaking yet very high stakes task because if you make a mistake, it'll just directly.
+
+98
+00:18:33.380 --> 00:18:35.110
+100x Engineers: Add cost to your company.
+
+99
+00:18:37.060 --> 00:18:39.120
+100x Engineers: And you take the responsibility of it.
+
+100
+00:18:49.570 --> 00:19:01.170
+100x Engineers: Now, I'm an engineer. Once I saw this problem, I immediately started thinking about, hey, there is a problem, because manually proving and looking at these invoices always gonna be
+
+101
+00:19:01.760 --> 00:19:05.829
+100x Engineers: Error prone, humans can make mistakes, so start thinking about.
+
+102
+00:19:05.960 --> 00:19:09.129
+100x Engineers: What is that one thing I can do to automate and help Rahul?
+
+103
+00:19:09.660 --> 00:19:12.559
+100x Engineers: And before I move to the next slide, where I've written the answer.
+
+104
+00:19:13.180 --> 00:19:16.189
+100x Engineers: I want all of you to give me one suggestion.
+
+105
+00:19:17.070 --> 00:19:20.880
+100x Engineers: If you would be in Arav's place, and I know a lot of in the house.
+
+106
+00:19:23.630 --> 00:19:25.940
+100x Engineers: What would be the first thing that you would write?
+
+107
+00:19:27.570 --> 00:19:31.800
+100x Engineers: To help us make this decision, or probably automate this decision.
+
+108
+00:19:36.540 --> 00:19:40.000
+100x Engineers: People who are saying AI agent, You will get a very.
+
+109
+00:19:41.160 --> 00:19:43.680
+100x Engineers: Interesting reality check by the end of this.
+
+110
+00:19:44.750 --> 00:19:59.039
+100x Engineers: Unfortunately, AI agents has a single-digit deployment rate when it comes to creating the impact in earnings before interest and taxes. This is a report published by McKinsey and Gartner, right now Stanford also.
+
+111
+00:19:59.550 --> 00:20:04.380
+100x Engineers: Unfortunately, the marketing of agents versus the impact of agents is like very different.
+
+112
+00:20:10.690 --> 00:20:13.409
+100x Engineers: Awesome! I like what some people have said.
+
+113
+00:20:14.190 --> 00:20:15.989
+100x Engineers: I'm an old school developer.
+
+114
+00:20:17.280 --> 00:20:26.490
+100x Engineers: If you ask me, the easiest thing which I can write here, or maybe I can think about helping Arav, is can I write condition?
+
+115
+00:20:26.630 --> 00:20:28.380
+100x Engineers: Conditional statement.
+
+116
+00:20:29.980 --> 00:20:32.119
+100x Engineers: If my purchase order.
+
+117
+00:20:32.230 --> 00:20:38.420
+100x Engineers: Which is all the items, like this, Does it add up?
+
+118
+00:20:40.290 --> 00:20:45.000
+100x Engineers: to the total amount which I received from my vendor invoice.
+
+119
+00:20:45.720 --> 00:20:48.300
+100x Engineers: To be honest, it can be written as.
+
+120
+00:20:48.850 --> 00:20:51.290
+100x Engineers: Simple as writing just a set of rules.
+
+121
+00:20:51.700 --> 00:21:04.829
+100x Engineers: Hey, just add all these numbers on the left side, on the right side, and see if these numbers match. You don't need an AI agent, you don't need a Grok bot, you don't need OpenClaw, you don't need Codex for that. Just simple mathematics.
+
+122
+00:21:05.480 --> 00:21:12.140
+100x Engineers: And the moment you have total calculations on the left and right-hand side, and that matches, You know that.
+
+123
+00:21:12.810 --> 00:21:17.539
+100x Engineers: These two are the right invoices. There is no discrepancy.
+
+124
+00:21:20.360 --> 00:21:21.829
+100x Engineers: So this is what I wrote.
+
+125
+00:21:22.630 --> 00:21:24.230
+100x Engineers: A simple if condition.
+
+126
+00:21:26.320 --> 00:21:29.760
+100x Engineers: If the invoices, which was on the left side, matches
+
+127
+00:21:30.010 --> 00:21:32.540
+100x Engineers: With a purchase order on the right side.
+
+128
+00:21:32.810 --> 00:21:40.140
+100x Engineers: Then we're gonna approve the decision that, hey, these two things are same, you don't need to spend your time reviewing it, and go ahead.
+
+129
+00:21:40.300 --> 00:21:42.880
+100x Engineers: And that just one line statement.
+
+130
+00:21:43.060 --> 00:21:44.640
+100x Engineers: Solve this job for Arav.
+
+131
+00:21:44.780 --> 00:21:46.500
+100x Engineers: Because it helps Sarath to.
+
+132
+00:21:46.620 --> 00:21:50.500
+100x Engineers: Now spend his time on more important things.
+
+133
+00:21:52.770 --> 00:21:59.119
+100x Engineers: The only… The question here, which is still unanswered, is that how should we match?
+
+134
+00:22:00.450 --> 00:22:04.350
+100x Engineers: Because, adding a number, is easy.
+
+135
+00:22:05.210 --> 00:22:06.030
+100x Engineers: But.
+
+136
+00:22:07.370 --> 00:22:12.070
+100x Engineers: Comparing the items which is written in English is difficult.
+
+137
+00:22:13.130 --> 00:22:16.699
+100x Engineers: For example, I'll move back to the previous slide one more time.
+
+138
+00:22:17.310 --> 00:22:23.429
+100x Engineers: The first item here is tomato A grade. I can Add all these numbers here.
+
+139
+00:22:23.660 --> 00:22:28.030
+100x Engineers: Which is 42, 8, 28. But how do I know that
+
+140
+00:22:29.410 --> 00:22:37.459
+100x Engineers: I have initially asked for tomato, which was the A grade tomatoes, but when a vendor gave me the order.
+
+141
+00:22:38.280 --> 00:22:40.759
+100x Engineers: Maybe he just wrote.
+
+142
+00:22:41.950 --> 00:22:45.180
+100x Engineers: The tomato, I never mentioned the grading of it.
+
+143
+00:22:45.610 --> 00:22:48.300
+100x Engineers: And because of that, the price was actually lower.
+
+144
+00:22:52.350 --> 00:22:57.280
+100x Engineers: In that case, Should I say that these two things do not match?
+
+145
+00:22:58.800 --> 00:23:02.399
+100x Engineers: That would be completely false, right? Because these are two different products.
+
+146
+00:23:02.950 --> 00:23:08.260
+100x Engineers: A price of tomato B grade would be obviously less than the tomato A grade.
+
+147
+00:23:09.460 --> 00:23:13.740
+100x Engineers: Now I also need to know the things which are getting.
+
+148
+00:23:14.560 --> 00:23:15.990
+100x Engineers: Build, right?
+
+149
+00:23:16.250 --> 00:23:20.819
+100x Engineers: So how do I match each and everything? So I should know, like, okay, what is there?
+
+150
+00:23:21.570 --> 00:23:25.919
+100x Engineers: In the left-hand side, which is the purchase order, is also there on the right-hand side.
+
+151
+00:23:27.600 --> 00:23:31.229
+100x Engineers: On the other hand, if I just have this if statement.
+
+152
+00:23:31.530 --> 00:23:36.480
+100x Engineers: which adds two numbers and check it, and I use the same logic For…
+
+153
+00:23:36.650 --> 00:23:39.080
+100x Engineers: It strings, you will see a difference.
+
+154
+00:23:42.330 --> 00:23:46.660
+100x Engineers: The difference is, Here it is written tomato A grade.
+
+155
+00:23:47.390 --> 00:23:51.520
+100x Engineers: Here is also written tomatoes, but with comma and with grade A.
+
+156
+00:23:53.970 --> 00:23:56.209
+100x Engineers: If I write again a rule-based check.
+
+157
+00:23:56.540 --> 00:24:02.010
+100x Engineers: It will tell me that these 2 things are different, but do you think these 2 sentences mean different things?
+
+158
+00:24:02.310 --> 00:24:04.060
+100x Engineers: In my head, it's the same thing.
+
+159
+00:24:04.340 --> 00:24:06.960
+100x Engineers: Both are great, it is just written differently.
+
+160
+00:24:08.570 --> 00:24:10.840
+100x Engineers: This is where things get complicated.
+
+161
+00:24:12.820 --> 00:24:22.150
+100x Engineers: Your single if statement can definitely add two numbers, add multiple numbers mathematically and compare it when it comes to language.
+
+162
+00:24:22.310 --> 00:24:34.399
+100x Engineers: Especially when it comes to these kind of invoices, because every vendor might have their way of writing how they write tomato A grade, or maybe, like, all other things. They might differ.
+
+163
+00:24:34.580 --> 00:24:37.530
+100x Engineers: And you can't just write all the permutation combination.
+
+164
+00:24:43.950 --> 00:24:45.709
+100x Engineers: If you would be in my position.
+
+165
+00:24:45.900 --> 00:24:49.760
+100x Engineers: And you have the same problem statement, what I shared with you.
+
+166
+00:24:50.430 --> 00:24:52.910
+100x Engineers: How would you now think about?
+
+167
+00:24:53.850 --> 00:24:54.990
+100x Engineers: Solving it.
+
+168
+00:24:58.450 --> 00:25:00.229
+100x Engineers: Just one thought from your head.
+
+169
+00:25:04.570 --> 00:25:06.729
+100x Engineers: We have to see if the purchase order.
+
+170
+00:25:07.070 --> 00:25:09.589
+100x Engineers: And the invoice is same or not.
+
+171
+00:25:09.700 --> 00:25:12.710
+100x Engineers: Not just the numbers, but also the items.
+
+172
+00:25:14.480 --> 00:25:16.600
+100x Engineers: I've told you what I wrote initially.
+
+173
+00:25:18.130 --> 00:25:22.070
+100x Engineers: Just a simple rule-based check, calculate the numbers, but then I realized that
+
+174
+00:25:22.820 --> 00:25:25.620
+100x Engineers: Products can change, and that doesn't mean
+
+175
+00:25:25.940 --> 00:25:28.980
+100x Engineers: The invoice, which has the different numbers.
+
+176
+00:25:29.530 --> 00:25:32.449
+100x Engineers: With different products, should not be equal.
+
+177
+00:25:33.370 --> 00:25:34.680
+100x Engineers: This depends.
+
+178
+00:26:02.440 --> 00:26:07.900
+100x Engineers: This was just one of the example, and the reason why I shared this example in the beginning because.
+
+179
+00:26:08.260 --> 00:26:12.139
+100x Engineers: I know each and every single developer.
+
+180
+00:26:12.690 --> 00:26:16.600
+100x Engineers: Or probably an engineer who has been building a solution.
+
+181
+00:26:17.580 --> 00:26:21.019
+100x Engineers: You must have written any kind of conditional statement in your career.
+
+182
+00:26:21.350 --> 00:26:23.110
+100x Engineers: A statement that checks.
+
+183
+00:26:23.210 --> 00:26:24.270
+100x Engineers: Two things.
+
+184
+00:26:25.010 --> 00:26:27.040
+100x Engineers: Doesn't matter whether these are two
+
+185
+00:26:27.800 --> 00:26:32.880
+100x Engineers: Purchase order, the invoices, these would be two resumes, maybe…
+
+186
+00:26:33.390 --> 00:26:41.889
+100x Engineers: An email which you're trying to escalate to your audience or to your team, a resume that fits a role or not.
+
+187
+00:26:42.000 --> 00:26:44.339
+100x Engineers: A tool call which is safe to run or not.
+
+188
+00:26:45.580 --> 00:26:52.719
+100x Engineers: Condition is a very important part of any kind of programming language, as well as any kind of automation as well.
+
+189
+00:26:57.290 --> 00:27:00.890
+100x Engineers: Throughout this next 30 minutes, I'll share you
+
+190
+00:27:01.620 --> 00:27:16.419
+100x Engineers: A quick framework which will help you to now apply this to your conditions. Every single place, whether you are a developer or not a developer, but you have thought about adding a condition in your code base, in your workflows, you will be able to now apply this as a framework.
+
+191
+00:27:16.700 --> 00:27:19.269
+100x Engineers: Before you apply it, I want to write down
+
+192
+00:27:19.850 --> 00:27:24.899
+100x Engineers: The condition that you have used in the past. This was my condition which I used.
+
+193
+00:27:26.270 --> 00:27:29.359
+100x Engineers: To check these two things, whether they are equal or not.
+
+194
+00:27:30.460 --> 00:27:31.890
+100x Engineers: Think about any last.
+
+195
+00:27:32.850 --> 00:27:40.879
+100x Engineers: Situation where you use the conditional statement where you had 2 things and you wanted to check whether these 2 things match or not and you have to take a decision based on that.
+
+196
+00:27:41.630 --> 00:27:46.320
+100x Engineers: And it is one line in the chart. Quickly scan this.
+
+197
+00:27:46.510 --> 00:27:47.750
+100x Engineers: And.
+
+198
+00:27:48.230 --> 00:27:56.340
+100x Engineers: For this, I'll share frameworks which you can apply immediately, which so connects to our main tool, the highlight of the day, Jagat.
+
+199
+00:27:59.130 --> 00:28:01.440
+100x Engineers: Okay, Charan Said is authorized.
+
+200
+00:28:03.540 --> 00:28:07.389
+100x Engineers: Harshwaran Said my last link it and Instamart cart.
+
+201
+00:28:08.180 --> 00:28:12.889
+100x Engineers: Karthik said taking a trade based on the target price on stock market. Very interesting, Karthik.
+
+202
+00:28:15.250 --> 00:28:20.340
+100x Engineers: Whatever it is, write it down and write it down for yourself as well.
+
+203
+00:28:20.890 --> 00:28:24.099
+100x Engineers: We'll come back to this, and we'll apply the same framework.
+
+204
+00:28:24.450 --> 00:28:27.569
+100x Engineers: And see how and where Jeff fits in all of this.
+
+205
+00:29:03.510 --> 00:29:06.350
+100x Engineers: Tell me, what is your judgment about that you have written?
+
+206
+00:29:13.470 --> 00:29:21.020
+100x Engineers: In my case, I'll give you my example. The judgment was about understanding whether these…
+
+207
+00:29:21.130 --> 00:29:25.339
+100x Engineers: Two lines where they have the list of items.
+
+208
+00:29:25.460 --> 00:29:30.100
+100x Engineers: And the total price, and we need to check whether the invoice and purchase order match or not.
+
+209
+00:29:31.200 --> 00:29:34.400
+100x Engineers: So, week one… This was the…
+
+210
+00:29:34.510 --> 00:29:38.429
+100x Engineers: Flaw which I found in my code and then I started updating my code.
+
+211
+00:29:38.730 --> 00:29:45.280
+100x Engineers: I started writing that, okay, now you also need to add, things which has a comma.
+
+212
+00:29:47.020 --> 00:29:52.159
+100x Engineers: Next week, I realized that There's a new vendor.
+
+213
+00:29:52.790 --> 00:29:56.449
+100x Engineers: Which gave me the bill, but now the price is different.
+
+214
+00:29:56.610 --> 00:29:58.499
+100x Engineers: For the grade A tomatoes.
+
+215
+00:30:00.110 --> 00:30:02.279
+100x Engineers: But there's a slightly difference.
+
+216
+00:30:02.990 --> 00:30:07.870
+100x Engineers: Slight difference in the invoice, which is the tomatoes are from Nashik.
+
+217
+00:30:08.820 --> 00:30:13.670
+100x Engineers: And apparently the tomatoes from this city, which is Nashik, is.
+
+218
+00:30:13.950 --> 00:30:16.419
+100x Engineers: Cheaper than the city where.
+
+219
+00:30:16.880 --> 00:30:22.150
+100x Engineers: The store is, which is, let's say, in Bangalore, because Bangalore, being a metro city,
+
+220
+00:30:22.850 --> 00:30:25.309
+100x Engineers: The same grade A tomato is expensive there.
+
+221
+00:30:26.300 --> 00:30:29.499
+100x Engineers: Now these two things contradict and I have to write another rule.
+
+222
+00:30:32.640 --> 00:30:33.869
+100x Engineers: For the week 3,
+
+223
+00:30:37.240 --> 00:30:38.570
+100x Engineers: I got this.
+
+224
+00:30:39.660 --> 00:30:42.349
+100x Engineers: A new vendor gave me a tomato.
+
+225
+00:30:42.550 --> 00:30:46.730
+100x Engineers: But they didn't even write the whole spelling. They just write T M T A G R.
+
+226
+00:30:47.330 --> 00:30:51.759
+100x Engineers: It's a short form, what they internally used. Maybe because the vendor is small.
+
+227
+00:30:52.030 --> 00:30:53.220
+100x Engineers: And,
+
+228
+00:30:53.440 --> 00:31:00.070
+100x Engineers: The company got a better price there, so they recently switched to that, but now everything which I wrote as a code.
+
+229
+00:31:00.370 --> 00:31:01.600
+100x Engineers: started breaking.
+
+230
+00:31:02.120 --> 00:31:05.559
+100x Engineers: Because it just only understands the deterministic.
+
+231
+00:31:05.910 --> 00:31:06.840
+100x Engineers: Rules.
+
+232
+00:31:08.970 --> 00:31:10.740
+100x Engineers: If you observe the pattern.
+
+233
+00:31:11.390 --> 00:31:15.309
+100x Engineers: We pattern from week one, where we made a slight change.
+
+234
+00:31:16.920 --> 00:31:21.060
+100x Engineers: To understand what are the… order items.
+
+235
+00:31:21.740 --> 00:31:30.670
+100x Engineers: To then also consider the city from which these orders came in, and to then now understanding a language which barely makes sense.
+
+236
+00:31:31.260 --> 00:31:35.299
+100x Engineers: Rules are changing, and this is exactly where our court can
+
+237
+00:31:35.480 --> 00:31:38.020
+100x Engineers: Break and maybe like keep breaking.
+
+238
+00:31:39.610 --> 00:31:42.939
+100x Engineers: And this way of solving and automating.
+
+239
+00:31:43.280 --> 00:31:48.910
+100x Engineers: a task for Rao, or for this particular problem statement, Does not help.
+
+240
+00:31:50.720 --> 00:31:54.689
+100x Engineers: What do you call the code that breaks whenever the reality changes the shape?
+
+241
+00:31:56.040 --> 00:31:58.689
+100x Engineers: Brittle, right? It's not flexible.
+
+242
+00:31:59.170 --> 00:32:02.039
+100x Engineers: We need more flexibility when it comes to.
+
+243
+00:32:03.830 --> 00:32:05.700
+100x Engineers: A real-time order like this.
+
+244
+00:32:10.250 --> 00:32:13.000
+100x Engineers: So as I… Proceed.
+
+245
+00:32:13.780 --> 00:32:15.929
+100x Engineers: And what a lot of you are suggesting me.
+
+246
+00:32:17.900 --> 00:32:23.279
+100x Engineers: We can use something which is more flexible, which we have been all using. It's called LLMs.
+
+247
+00:32:23.590 --> 00:32:27.600
+100x Engineers: The large language models that is trained to do the exact same task.
+
+248
+00:32:28.020 --> 00:32:29.630
+100x Engineers: You have two invoices?
+
+249
+00:32:30.480 --> 00:32:41.089
+100x Engineers: Whatever the language is, even the language barely makes sense. These language models are super great. They can understand it and they can give you the value. So just like any other developer.
+
+250
+00:32:42.550 --> 00:32:45.800
+100x Engineers: I started using LLM. So this is the LLM call which I wrote.
+
+251
+00:32:45.930 --> 00:32:48.860
+100x Engineers: When I said… I wrote a simple prompt.
+
+252
+00:32:49.110 --> 00:32:51.980
+100x Engineers: Does this invoice match this PO?
+
+253
+00:32:52.320 --> 00:32:55.640
+100x Engineers: I put the invoice, I put the purchase order.
+
+254
+00:32:56.350 --> 00:33:04.049
+100x Engineers: This time I completely removed the statement. I just wrote a prompt and then I gave the prompt to the LM.
+
+255
+00:33:05.250 --> 00:33:09.310
+100x Engineers: Along with that, I also wanted it to give me something specific.
+
+256
+00:33:10.030 --> 00:33:15.730
+100x Engineers: So I asked that don't just randomly throw some words, give me a structured output.
+
+257
+00:33:15.890 --> 00:33:17.280
+100x Engineers: In this format.
+
+258
+00:33:17.600 --> 00:33:22.439
+100x Engineers: Which means, if there is a mismatch, tell me whether it is true or false, which means the…
+
+259
+00:33:22.940 --> 00:33:27.189
+100x Engineers: If there's a mismatch, write it true. If there's no mismatch, then write false.
+
+260
+00:33:27.510 --> 00:33:32.280
+100x Engineers: And also write a confidence score so that I know how confident you are.
+
+261
+00:33:34.280 --> 00:33:37.309
+100x Engineers: When I ran this query, which is a prompt to LLM,
+
+262
+00:33:37.430 --> 00:33:41.609
+100x Engineers: Giving both the purchase order, the invoice, It worked.
+
+263
+00:33:42.270 --> 00:33:44.610
+100x Engineers: And this is a real experiment which I did.
+
+264
+00:33:44.720 --> 00:33:48.770
+100x Engineers: With the same company, and with the same person.
+
+265
+00:33:49.490 --> 00:33:55.320
+100x Engineers: It worked on all the invoices, and we calculated the total cost
+
+266
+00:33:55.930 --> 00:34:06.569
+100x Engineers: Came around $1.24. I was using a model called Claude Sonnet 5, which is Anthropic's model available for free for everybody. You guys can try it out as well.
+
+267
+00:34:06.780 --> 00:34:11.760
+100x Engineers: And it took 12 minutes of time to do this entire processing. Very fast.
+
+268
+00:34:11.960 --> 00:34:13.480
+100x Engineers: My client loved it.
+
+269
+00:34:13.630 --> 00:34:16.750
+100x Engineers: Student loved it. Everybody thought, okay, this is great.
+
+270
+00:34:22.199 --> 00:34:27.740
+100x Engineers: Sonnet said that It's sure about 95% of the time.
+
+271
+00:34:29.280 --> 00:34:32.830
+100x Engineers: On an invoice, It got wrong.
+
+272
+00:34:36.600 --> 00:34:38.680
+100x Engineers: They were across 15 voices.
+
+273
+00:34:39.530 --> 00:34:43.389
+100x Engineers: It only ever said 65, 85, 90, or 95.
+
+274
+00:34:44.280 --> 00:34:48.199
+100x Engineers: All of these words initially
+
+275
+00:34:48.400 --> 00:34:50.150
+100x Engineers: looked very confident.
+
+276
+00:34:50.300 --> 00:34:54.550
+100x Engineers: But the moment I saw that there was a problem.
+
+277
+00:34:55.300 --> 00:35:08.610
+100x Engineers: When this LLM is saying that these two invoice are actually same, and it is saying that it's 95% sure that these are same, or in the cases where these were wrong from the LLM, it was very sure that it was wrong or right.
+
+278
+00:35:08.870 --> 00:35:11.209
+100x Engineers: But the answer was completely opposite.
+
+279
+00:35:12.940 --> 00:35:14.999
+100x Engineers: Hence, what we realize that.
+
+280
+00:35:15.190 --> 00:35:19.839
+100x Engineers: Actually, the number which LLM is producing here as the confidence score.
+
+281
+00:35:21.410 --> 00:35:23.000
+100x Engineers: It's just a prediction.
+
+282
+00:35:23.730 --> 00:35:25.820
+100x Engineers: And it is actually a text.
+
+283
+00:35:26.230 --> 00:35:37.190
+100x Engineers: Which is coming as a prediction, and we are making it a structured output. This is what happens with every single LLM workflow. If you are using LLM right now in production for tasks like this.
+
+284
+00:35:39.270 --> 00:35:42.690
+100x Engineers: There would be a chance very soon you will find out.
+
+285
+00:35:42.900 --> 00:35:44.420
+100x Engineers: exactly like this.
+
+286
+00:35:44.640 --> 00:36:01.120
+100x Engineers: The LLM is saying that it is completely right or maybe more confident about the answer, but you will realize that the output is actually not correct. How many times you have seen that LLM gives you a wrong answer and then you point it out that, hey, this is wrong, and that completely accepts, yes, you are right, I was wrong.
+
+287
+00:36:01.570 --> 00:36:04.229
+100x Engineers: If you have faced this, just raise your hand.
+
+288
+00:36:04.780 --> 00:36:07.440
+100x Engineers: I want to see how many of you have actually faced this.
+
+289
+00:36:07.620 --> 00:36:10.460
+100x Engineers: Because I do this a lot, like, I work with the LLMs.
+
+290
+00:36:10.810 --> 00:36:16.419
+100x Engineers: And every now and then, an LLM makes a mistake and they say that, yes, you are wrong.
+
+291
+00:36:18.390 --> 00:36:23.129
+100x Engineers: And imagine this time, There's money on the line.
+
+292
+00:36:24.980 --> 00:36:30.120
+100x Engineers: So now I can't rely on this. I can't share this with Arav and his company because
+
+293
+00:36:30.550 --> 00:36:36.600
+100x Engineers: Like, what if LM says that it is confident, but it just gives the wrong answer, and that will cost the money?
+
+294
+00:36:39.600 --> 00:36:48.210
+100x Engineers: Would you auto-pay on this? Would you, like, run this as an automation, where the LLM will give you the confidence score, and you will make a decision that can cost somebody?
+
+295
+00:36:49.160 --> 00:36:50.219
+100x Engineers: No, right?
+
+296
+00:36:50.740 --> 00:36:54.590
+100x Engineers: That's exactly what I did. I thought, okay, this is a bad idea.
+
+297
+00:36:54.820 --> 00:36:58.569
+100x Engineers: Ran it as an experiment, learnt You should not…
+
+298
+00:36:58.750 --> 00:37:02.610
+100x Engineers: Never let LLM decide anything which is linked to your money.
+
+299
+00:37:03.180 --> 00:37:10.019
+100x Engineers: But unfortunately, a lot of you accidentally, knowingly or unknowingly are doing it.
+
+300
+00:37:10.230 --> 00:37:15.240
+100x Engineers: So this is also a reminder that wherever you have written any kind of logic like this in your code.
+
+301
+00:37:15.350 --> 00:37:26.999
+100x Engineers: Or maybe you're using LLMs for decisions like this. Always double check because LLMs are predictive machines. Their job is to do the prediction, not to tell you what is right and wrong.
+
+302
+00:37:32.270 --> 00:37:34.140
+100x Engineers: What is the third option for us?
+
+303
+00:37:35.170 --> 00:37:37.679
+100x Engineers: Just to do a quick recap for everybody.
+
+304
+00:37:39.090 --> 00:37:41.199
+100x Engineers: What the problem? We are sorry.
+
+305
+00:37:42.410 --> 00:37:51.240
+100x Engineers: We have this person who is a business analyst working at a grocery, for right now, a grocery client, and he receives hundreds of invoices
+
+306
+00:37:52.420 --> 00:37:53.460
+100x Engineers: Every day.
+
+307
+00:37:54.510 --> 00:37:57.179
+100x Engineers: And he's right now comparing it manually.
+
+308
+00:37:57.360 --> 00:38:15.969
+100x Engineers: And because he's doing it manually, it has, like, humans are prone to errors and making mistakes, so it makes mistakes, and we want to help him to automate that task. Very simple task, two invoices, with two parts. One is the purchase order, which company makes, and company says that this is what we want to order. Other thing is, when they receive the order, they get the invoice.
+
+309
+00:38:16.280 --> 00:38:22.930
+100x Engineers: Our job is to check whether these two things are same. If they are same, we go to the next one. If not, we flag it out.
+
+310
+00:38:23.780 --> 00:38:30.249
+100x Engineers: We tried to write a simple if condition that failed because language is Not so flexible.
+
+311
+00:38:31.980 --> 00:38:49.000
+100x Engineers: Someone can order a tomato from Nashik that will have a different price. Someone can order it from Bangalore that will have a different price. Someone can just write TMTAGR, which barely sounds like a tomato, but it's just like vendors invoice and we can't tell each and every vendor to change how they write.
+
+312
+00:38:49.070 --> 00:39:00.079
+100x Engineers: So flexibility was a problem because if condition, which is our rule-based system, did not work here. Then we thought, okay, let's use the flexible one, which is the LLM, the most favorite.
+
+313
+00:39:00.270 --> 00:39:07.880
+100x Engineers: Where a lot of people suggested that we should use agents. Imagine we have not used agents, it's just an LLM. So I hope you got a reality check right now.
+
+314
+00:39:08.320 --> 00:39:13.879
+100x Engineers: This also did not work because it just gave a prediction and we saw the prediction was wrong.
+
+315
+00:39:14.620 --> 00:39:16.440
+100x Engineers: What is the last option we have?
+
+316
+00:39:17.160 --> 00:39:23.820
+100x Engineers: If you are… A data scientist, data engineer, machine learning engineer.
+
+317
+00:39:24.440 --> 00:39:27.560
+100x Engineers: Or somebody who has used a machine learning model.
+
+318
+00:39:28.570 --> 00:39:30.180
+100x Engineers: From the good old days.
+
+319
+00:39:30.540 --> 00:39:32.530
+100x Engineers: You know, these kind of tasks.
+
+320
+00:39:32.810 --> 00:39:43.810
+100x Engineers: Historically, has been done really well with a classifier. A classifier is a specific type of machine learning model which helps you to do only one and one thing, that is classify.
+
+321
+00:39:45.340 --> 00:39:52.950
+100x Engineers: Whatever the task is, does this task is good or bad? Is this cat or not? Is it dog or not? Is it hot dog or not?
+
+322
+00:39:53.630 --> 00:39:58.110
+100x Engineers: So… What I do is maybe just build a simple classifier.
+
+323
+00:39:58.700 --> 00:40:00.439
+100x Engineers: The most cheapest solution.
+
+324
+00:40:00.580 --> 00:40:06.349
+100x Engineers: Most accurate one, also the good old solution everybody has been using from last 10 years.
+
+325
+00:40:06.610 --> 00:40:10.490
+100x Engineers: So I thought, okay, let me build a classifier, simple machine learning model.
+
+326
+00:40:11.050 --> 00:40:13.680
+100x Engineers: So I asked Arav that, hey,
+
+327
+00:40:14.180 --> 00:40:25.740
+100x Engineers: Can you give me some data about how do you classify these invoices? And just label it what is the match, what is not the match. So I will train a simple model. I trained a model.
+
+328
+00:40:26.010 --> 00:40:35.320
+100x Engineers: In this model, because classification has one condition, that it works on one question, dog or not dog, cat or not cat.
+
+329
+00:40:35.460 --> 00:40:38.629
+100x Engineers: Because it's not as flexible as the LLMs.
+
+330
+00:40:39.260 --> 00:40:43.520
+100x Engineers: So I first trained this model on can it flag duplicates?
+
+331
+00:40:44.360 --> 00:40:45.560
+100x Engineers: So…
+
+332
+00:40:46.620 --> 00:40:58.389
+100x Engineers: He said, okay, this one cannot, because it can only tell whether these two invoices match or not. It cannot find duplicate invoices. For duplicate invoices, you have to train a different model.
+
+333
+00:40:59.160 --> 00:41:02.080
+100x Engineers: So, okay, I said, let's train a different model.
+
+334
+00:41:02.340 --> 00:41:09.950
+100x Engineers: Then the second question came from the client, say, can this tell if the vendor note need a lie or not?
+
+335
+00:41:10.850 --> 00:41:13.550
+100x Engineers: And this also, like, my model can do, because…
+
+336
+00:41:14.120 --> 00:41:16.629
+100x Engineers: This was a very specific ask, which…
+
+337
+00:41:18.420 --> 00:41:21.989
+100x Engineers: Right now, that also is a new.
+
+338
+00:41:23.990 --> 00:41:28.969
+100x Engineers: Every question or a new question here is a new labeling job.
+
+339
+00:41:29.170 --> 00:41:32.130
+100x Engineers: And it requires a new model.
+
+340
+00:41:32.780 --> 00:41:37.129
+100x Engineers: So, if Arav needs to decide Between two invoices.
+
+341
+00:41:37.240 --> 00:41:48.389
+100x Engineers: By asking not maybe, like, one single question, but multiple questions, let's say 3, 4, 5, before taking a decision whether these two are actually, I would say, match or not match.
+
+342
+00:41:48.850 --> 00:41:51.459
+100x Engineers: I end up, like, building a lot more models.
+
+343
+00:41:52.190 --> 00:41:57.799
+100x Engineers: And even then, I might not be sure that whether these are the enough number of models that can give justification to RO.
+
+344
+00:42:01.470 --> 00:42:12.400
+100x Engineers: It kind of solved the problem, but it now put putting more effort on me as a developer because I have to like every single time Arav asked me a question, I would train a new model. Becomes very expensive, by the way, as well.
+
+345
+00:42:15.240 --> 00:42:23.790
+100x Engineers: These are the three solutions I personally tried on a workflow like this. And I know a lot of students of mine who has tried this.
+
+346
+00:42:25.890 --> 00:42:32.610
+100x Engineers: We started with deterministic systems, which is rule-based if conditions. We check whether if these two things are same or not.
+
+347
+00:42:32.990 --> 00:42:40.540
+100x Engineers: We saw those systems are very brittle. When we check the most flexible ones, LLMs, those are slow, costly.
+
+348
+00:42:41.040 --> 00:42:41.990
+100x Engineers: And.
+
+349
+00:42:42.160 --> 00:42:44.560
+100x Engineers: They hallucinate, they fake confidence.
+
+350
+00:42:44.690 --> 00:42:59.370
+100x Engineers: The last one was classifier. It does the job really well, but it only answers one question, one model per question. If you have a task which has multiple questions, probably end up building classifier for each and every model or each and every question.
+
+351
+00:43:07.830 --> 00:43:21.410
+100x Engineers: So what we need, actually, to solve this problem, and this was my learning from this whole experiment, is that not just if conditions, not just LLMs, not just classifier, but a mix of all these three things.
+
+352
+00:43:22.070 --> 00:43:23.830
+100x Engineers: Again, I'll repeat myself.
+
+353
+00:43:24.070 --> 00:43:28.549
+100x Engineers: What we need, in order for us to match to
+
+354
+00:43:28.670 --> 00:43:32.269
+100x Engineers: Things. In this case, invoice and purchase order.
+
+355
+00:43:32.420 --> 00:43:36.750
+100x Engineers: It's not just the if condition that we have written in the Bust.
+
+356
+00:43:38.400 --> 00:43:42.890
+100x Engineers: It's also not… The LLM condition, or the LLM prompt.
+
+357
+00:43:43.390 --> 00:43:48.329
+100x Engineers: It's also not the classifier, but it's a mix of all these three things.
+
+358
+00:43:48.670 --> 00:43:50.199
+100x Engineers: A rule-based system.
+
+359
+00:43:50.980 --> 00:43:52.540
+100x Engineers: Language model.
+
+360
+00:43:53.020 --> 00:43:54.389
+100x Engineers: And a classifier.
+
+361
+00:43:58.150 --> 00:44:00.060
+100x Engineers: That is the same problem.
+
+362
+00:44:02.200 --> 00:44:04.170
+100x Engineers: Somebody at San Francisco.
+
+363
+00:44:04.670 --> 00:44:11.390
+100x Engineers: Felt it and solved it. That somebody was also one of the core author of ChatGPT's Instruct paper.
+
+364
+00:44:11.670 --> 00:44:15.320
+100x Engineers: Co-author of Reinforcement Learning from Human Feedback.
+
+365
+00:44:15.430 --> 00:44:17.889
+100x Engineers: One of the most cited paper.
+
+366
+00:44:18.010 --> 00:44:19.690
+100x Engineers: In the RLHF world.
+
+367
+00:44:25.740 --> 00:44:28.159
+100x Engineers: These guys faced faced the same problem.
+
+368
+00:44:28.280 --> 00:44:30.770
+100x Engineers: But there are a lot of tasks like these.
+
+369
+00:44:30.990 --> 00:44:35.739
+100x Engineers: Just like what Arora was facing, where you can't just write a simple if condition.
+
+370
+00:44:36.120 --> 00:44:40.300
+100x Engineers: LLM becomes costly and slow at volume.
+
+371
+00:44:40.770 --> 00:44:42.920
+100x Engineers: Hallucinate, so we can't trust it.
+
+372
+00:44:43.500 --> 00:44:50.020
+100x Engineers: Smaller classifier models and machine learning models cannot do the job because they only answer one question.
+
+373
+00:44:50.130 --> 00:44:56.269
+100x Engineers: So we need a mix of all these three. And this is where Jev comes into the picture.
+
+374
+00:44:58.870 --> 00:45:01.249
+100x Engineers: This… Is the real voice?
+
+375
+00:45:02.820 --> 00:45:05.759
+100x Engineers: I've removed the details from this.
+
+376
+00:45:08.260 --> 00:45:10.409
+100x Engineers: This is how you use.
+
+377
+00:45:10.860 --> 00:45:13.020
+100x Engineers: A simple Jev API.
+
+378
+00:45:14.950 --> 00:45:17.369
+100x Engineers: There are three things. First, I'll talk about it.
+
+379
+00:45:18.800 --> 00:45:21.040
+100x Engineers: We are solving the still same problem, by the way.
+
+380
+00:45:21.720 --> 00:45:23.909
+100x Engineers: But now, we are solving it with
+
+381
+00:45:24.130 --> 00:45:28.070
+100x Engineers: This whole new system, which is a combination of these three things.
+
+382
+00:45:29.120 --> 00:45:30.150
+100x Engineers: State.
+
+383
+00:45:30.580 --> 00:45:32.820
+100x Engineers: What is the thing that is being judged?
+
+384
+00:45:33.500 --> 00:45:36.010
+100x Engineers: In our case, we were judging two things.
+
+385
+00:45:36.220 --> 00:45:41.909
+100x Engineers: The invoice and the purchase order, what you want to purchase and what is the actual bill.
+
+386
+00:45:43.210 --> 00:45:45.840
+100x Engineers: So that is what Jev called state.
+
+387
+00:45:46.430 --> 00:45:48.250
+100x Engineers: The second thing is question.
+
+388
+00:45:48.600 --> 00:45:50.210
+100x Engineers: What you want to decide.
+
+389
+00:45:52.860 --> 00:46:02.720
+100x Engineers: Do you want to decide whether these two things are same? You want to decide whether these two belong to the same vendor? You want to decide something else? Whatever the question is.
+
+390
+00:46:02.860 --> 00:46:04.899
+100x Engineers: This becomes the second component.
+
+391
+00:46:05.330 --> 00:46:07.120
+100x Engineers: The third thing is criteria.
+
+392
+00:46:08.550 --> 00:46:13.569
+100x Engineers: Criteria of how do you make a decision whether it is yes or no.
+
+393
+00:46:19.190 --> 00:46:24.539
+100x Engineers: This is how the… API response looks like, the request looks like.
+
+394
+00:46:25.110 --> 00:46:27.680
+100x Engineers: It's a simple type safe.
+
+395
+00:46:28.260 --> 00:46:29.789
+100x Engineers: Dot AI API.
+
+396
+00:46:31.410 --> 00:46:37.190
+100x Engineers: You mentioned a model name. So I did mention that this is the latest model which I'm using, the Jev-latest.
+
+397
+00:46:39.960 --> 00:46:44.830
+100x Engineers: Now we'll put… The two things that are being judged in the state.
+
+398
+00:46:44.980 --> 00:46:48.510
+100x Engineers: So in the state, I have mentioned my invoice and the purchase order.
+
+399
+00:46:49.280 --> 00:46:50.759
+100x Engineers: And then the question?
+
+400
+00:46:51.480 --> 00:46:58.839
+100x Engineers: In question, I exactly mentioned the same prompt, which I was asking the LLM. Did this invoice bill for anything different?
+
+401
+00:46:59.210 --> 00:47:01.220
+100x Engineers: From what purchase order ordered.
+
+402
+00:47:03.010 --> 00:47:04.940
+100x Engineers: Now, if you observe this question.
+
+403
+00:47:07.450 --> 00:47:10.080
+100x Engineers: Has a binary answer, which means yes and no.
+
+404
+00:47:10.200 --> 00:47:11.369
+100x Engineers: True or false?
+
+405
+00:47:11.860 --> 00:47:15.339
+100x Engineers: And I need to also explain this to this model.
+
+406
+00:47:16.060 --> 00:47:17.679
+100x Engineers: What is the criteria?
+
+407
+00:47:18.480 --> 00:47:20.719
+100x Engineers: Of when you sh- when you should say.
+
+408
+00:47:21.280 --> 00:47:27.549
+100x Engineers: Pro and Venu she calls. If the items… In the purchase order.
+
+409
+00:47:28.480 --> 00:47:33.889
+100x Engineers: Quantity, grade, or unit price are different, not just the price.
+
+410
+00:47:34.380 --> 00:47:38.669
+100x Engineers: You look at all three things, the quantity of that item.
+
+411
+00:47:39.200 --> 00:47:43.690
+100x Engineers: The name of the item, the grade of the item, and the price. If those
+
+412
+00:47:44.170 --> 00:47:52.559
+100x Engineers: Things are different, then give the judgment as to that, yes, these two are different, or they have something different.
+
+413
+00:47:52.900 --> 00:47:58.889
+100x Engineers: If everything is good, same, which is the same goods, the same tomato, the same name.
+
+414
+00:47:59.300 --> 00:48:01.939
+100x Engineers: Just formatting is different.
+
+415
+00:48:03.760 --> 00:48:09.820
+100x Engineers: You should say false, but… Yeah, there is no difference in these two items. You can go ahead.
+
+416
+00:48:12.240 --> 00:48:14.820
+100x Engineers: This is… All of Jeff.
+
+417
+00:48:15.010 --> 00:48:16.869
+100x Engineers: In just one single API.
+
+418
+00:48:20.430 --> 00:48:25.470
+100x Engineers: What it returns… Is a score.
+
+419
+00:48:26.700 --> 00:48:29.429
+100x Engineers: And this score is not a text rule.
+
+420
+00:48:29.760 --> 00:48:32.199
+100x Engineers: This is actually a probability.
+
+421
+00:48:32.780 --> 00:48:37.519
+100x Engineers: As compared to what LLM gives you, which is a prediction on language and tokens.
+
+422
+00:48:38.210 --> 00:48:42.050
+100x Engineers: Large language model's job is to give the tokens out.
+
+423
+00:48:42.190 --> 00:48:47.590
+100x Engineers: And it puts the tokens in. This model does not give you any language at all.
+
+424
+00:48:48.690 --> 00:48:51.789
+100x Engineers: Takes all these three things, which is…
+
+425
+00:48:53.330 --> 00:48:56.790
+100x Engineers: The state question and the criteria and gives you a number.
+
+426
+00:49:00.620 --> 00:49:02.140
+100x Engineers: This is the probability.
+
+427
+00:49:04.950 --> 00:49:09.980
+100x Engineers: Which means, based on the criteria you defined, and the question you have asked.
+
+428
+00:49:10.260 --> 00:49:16.059
+100x Engineers: There's a 97% chance that this Jev model is saying that these two things.
+
+429
+00:49:16.650 --> 00:49:20.259
+100x Engineers: Are pointing towards the yes answer, which is the true.
+
+430
+00:49:21.190 --> 00:49:22.990
+100x Engineers: So I ran this whole thing.
+
+431
+00:49:23.740 --> 00:49:26.690
+100x Engineers: This is my playground on the Jeff.
+
+432
+00:49:26.870 --> 00:49:34.599
+100x Engineers: You guys can… Sign up for Jev right now. The only thing why, I don't… Like do.
+
+433
+00:49:34.900 --> 00:49:40.330
+100x Engineers: The active promotion because there are a lot of open source models which are also doing the same thing.
+
+434
+00:49:40.450 --> 00:49:56.629
+100x Engineers: Very soon, in the next 6 months, you will see there will be, like, a lot of models and options like Jev this. Jev is, like, one of the first ones, just like what ChatGPT did, but I'm sure in just very less time, there'll be more models like this. But in case you are interested, you can go to
+
+435
+00:49:58.190 --> 00:50:02.230
+100x Engineers: Console.typesafe.ai slash playground.
+
+436
+00:50:02.440 --> 00:50:06.940
+100x Engineers: Right now, Jev is invite-only, so you have to sign up for the waitlist. I was…
+
+437
+00:50:07.270 --> 00:50:09.019
+100x Engineers: Lucky enough to get the invite.
+
+438
+00:50:09.610 --> 00:50:12.540
+100x Engineers: Just the day after these guys released,
+
+439
+00:50:13.000 --> 00:50:15.180
+100x Engineers: So I've been testing it since then.
+
+440
+00:50:16.670 --> 00:50:22.320
+100x Engineers: This is how the playground looks like, by the way. So all the things which I just showed you.
+
+441
+00:50:24.070 --> 00:50:33.400
+100x Engineers: the three parts, state, questions, and criterias, you write it here in the JSON format. And you can evaluate, you can see, like, how these things work.
+
+442
+00:50:37.130 --> 00:50:38.480
+100x Engineers: This is what I did.
+
+443
+00:50:38.630 --> 00:50:39.950
+100x Engineers: I added my…
+
+444
+00:50:41.030 --> 00:50:48.269
+100x Engineers: In voice, I put the tomato, egg rate, coriander, onion, all those things, and it gave me the answer.
+
+445
+00:50:51.000 --> 00:50:52.459
+100x Engineers: That based on the.
+
+446
+00:50:53.150 --> 00:50:57.870
+100x Engineers: Question which we asked, does the invoice bill For anything different.
+
+447
+00:50:58.020 --> 00:51:00.220
+100x Engineers: From what the purchase order ordered.
+
+448
+00:51:01.160 --> 00:51:06.490
+100x Engineers: And these were the criteria we defined, and it said 97% chance this is true.
+
+449
+00:51:27.130 --> 00:51:31.229
+100x Engineers: Now, what I did initially, Is to see…
+
+450
+00:51:31.620 --> 00:51:35.660
+100x Engineers: First of all, what is the difference between the judgment, time, and cost?
+
+451
+00:51:36.890 --> 00:51:43.690
+100x Engineers: So I compared this output with Sonnet 5, which is one of the latest model from Claude.
+
+452
+00:51:43.920 --> 00:51:47.940
+100x Engineers: Available for free for everyone. You guys can try it out on the website.
+
+453
+00:51:49.990 --> 00:51:52.249
+100x Engineers: And I tested it against Jafar.
+
+454
+00:51:53.520 --> 00:51:57.190
+100x Engineers: Same API, same invoice, same question.
+
+455
+00:51:58.490 --> 00:52:01.260
+100x Engineers: I'll show you the exact results here.
+
+456
+00:52:02.630 --> 00:52:05.000
+100x Engineers: Sonnet, which is from Anthropic.
+
+457
+00:52:05.560 --> 00:52:08.089
+100x Engineers: Took 2.5 seconds.
+
+458
+00:52:08.320 --> 00:52:13.039
+100x Engineers: Give me the same answer with probably 95% confidence score.
+
+459
+00:52:13.720 --> 00:52:19.880
+100x Engineers: And costed around $0.0023. This was… The cost from it.
+
+460
+00:52:20.390 --> 00:52:23.600
+100x Engineers: On the other side, Jev.
+
+461
+00:52:24.330 --> 00:52:28.989
+100x Engineers: Gave me the same answer with 97% probability of yes.
+
+462
+00:52:30.040 --> 00:52:32.929
+100x Engineers: Under 420 ms.
+
+463
+00:52:33.650 --> 00:52:36.600
+100x Engineers: Just to highlight these two numbers.
+
+464
+00:52:36.710 --> 00:52:43.440
+100x Engineers: This is 2.5 seconds, and this is 420 milliseconds. 0.42 seconds.
+
+465
+00:52:46.460 --> 00:52:49.210
+100x Engineers: The cost is drastically cheaper here.
+
+466
+00:52:49.640 --> 00:52:52.430
+100x Engineers: 0.0003.
+
+467
+00:52:57.010 --> 00:53:02.230
+100x Engineers: Right? It might not sound like a huge dollar, but it's multiplied by 100.
+
+468
+00:53:03.490 --> 00:53:09.100
+100x Engineers: What is… Aravda every single day.
+
+469
+00:53:10.080 --> 00:53:12.259
+100x Engineers: And then multiply it by 7.
+
+470
+00:53:12.480 --> 00:53:15.430
+100x Engineers: Maybe multiply it by 365 days.
+
+471
+00:53:15.640 --> 00:53:16.910
+100x Engineers: And you will get.
+
+472
+00:53:17.070 --> 00:53:20.860
+100x Engineers: A drastic difference in terms of the cost, in terms of the time.
+
+473
+00:53:21.180 --> 00:53:25.980
+100x Engineers: For the same answer, and probably, in this case, this was, like, much confident answer.
+
+474
+00:53:27.520 --> 00:53:37.310
+100x Engineers: And I know that this is coming from the probability, not from the prediction of tokens, because the entire job of this model is to just give you the number, just like what a Clarifyr does.
+
+475
+00:53:47.000 --> 00:53:49.290
+100x Engineers: Now, this is where the things get interesting.
+
+476
+00:53:52.840 --> 00:53:55.130
+100x Engineers: The core first principles.
+
+477
+00:53:56.080 --> 00:53:58.799
+100x Engineers: Of using this new model.
+
+478
+00:53:59.320 --> 00:54:01.210
+100x Engineers: Or I would say this new technique.
+
+479
+00:54:01.640 --> 00:54:07.169
+100x Engineers: Which actually is a problem that you all have felt right now before I explained you.
+
+480
+00:54:09.060 --> 00:54:24.779
+100x Engineers: The problem where you need to judge something. In my case, I had purchase order and the invoice. And I tried rules, writing if statement. Then I tried LLMs. Then I also tried building my own classifier, small models. All of these three as a different solution failed.
+
+481
+00:54:25.180 --> 00:54:26.129
+100x Engineers: So I thought…
+
+482
+00:54:26.620 --> 00:54:37.000
+100x Engineers: What would be the best and ideal solution could be a mix of all these three things, take the best parts of everyone and then build it. And that is exactly what Jev is doing right now and how it works.
+
+483
+00:54:37.110 --> 00:54:39.369
+100x Engineers: Today, you write the state.
+
+484
+00:54:39.960 --> 00:54:45.339
+100x Engineers: What is the thing that being judged in this text format? What are the questions?
+
+485
+00:54:45.570 --> 00:54:57.699
+100x Engineers: What you want to judge and what is the criteria of judging it. And once you write these three things, these are the first principles for using Jev. You can apply this framework for every single condition and every single judgment.
+
+486
+00:55:02.050 --> 00:55:03.919
+100x Engineers: Is this a mismatch?
+
+487
+00:55:04.490 --> 00:55:06.030
+100x Engineers: Which line is wrong?
+
+488
+00:55:06.270 --> 00:55:07.720
+100x Engineers: How bad this is.
+
+489
+00:55:09.930 --> 00:55:11.370
+100x Engineers: Jev besides.
+
+490
+00:55:11.580 --> 00:55:13.010
+100x Engineers: Answers to everything.
+
+491
+00:55:20.200 --> 00:55:22.469
+100x Engineers: It divides questions into 3 parts.
+
+492
+00:55:23.500 --> 00:55:26.299
+100x Engineers: One type of question, where the answer is…
+
+493
+00:55:26.930 --> 00:55:29.990
+100x Engineers: Yes and no, just like what we asked in the case of Aruf.
+
+494
+00:55:30.570 --> 00:55:37.939
+100x Engineers: But I know some of you have written the if statement, and this is a time where you can look back at the if statement that you have written in the chat.
+
+495
+00:55:38.690 --> 00:55:41.259
+100x Engineers: Maybe in your case, the condition.
+
+496
+00:55:41.780 --> 00:55:45.659
+100x Engineers: It's not about yes and no, but it's about choice.
+
+497
+00:55:46.710 --> 00:55:52.450
+100x Engineers: For example, if this user is authenticated, Then…
+
+498
+00:55:53.210 --> 00:55:57.150
+100x Engineers: Find the name and the user ID from the database.
+
+499
+00:55:58.030 --> 00:56:04.340
+100x Engineers: out of the 255 users which are there on the SQL table, And then pick one.
+
+500
+00:56:04.740 --> 00:56:07.889
+100x Engineers: And then use this data to log in and create a profile.
+
+501
+00:56:08.590 --> 00:56:15.619
+100x Engineers: Or could be, like, maybe any other option, or any other condition where you need not just yes and no, but…
+
+502
+00:56:16.010 --> 00:56:19.219
+100x Engineers: A choice among multiple options.
+
+503
+00:56:20.260 --> 00:56:29.200
+100x Engineers: So this is the second type of question which Jev supports, apart from yes and no, that is called the choice type of question. So Jev called it choice.
+
+504
+00:56:31.430 --> 00:56:32.810
+100x Engineers: Which line is wrong?
+
+505
+00:56:34.060 --> 00:56:39.009
+100x Engineers: Which one is more closer to the condition that you want?
+
+506
+00:56:39.790 --> 00:56:45.539
+100x Engineers: In this case, you can set The list of possible answers.
+
+507
+00:56:46.430 --> 00:56:52.360
+100x Engineers: And Jev will give you a probability that right now they are supporting up to 255.
+
+508
+00:56:53.130 --> 00:57:01.410
+100x Engineers: Which means you can upload, let's say, 255 users, and someone can maybe, like, write a description about them, and you can see, like, which
+
+509
+00:57:03.340 --> 00:57:11.229
+100x Engineers: Is the most closest answer to this thing that your user has written out of 255 options.
+
+510
+00:57:11.390 --> 00:57:13.329
+100x Engineers: So if you have played any quiz game.
+
+511
+00:57:14.340 --> 00:57:17.910
+100x Engineers: Which has, like, say, multiple choice questions, 4 or 3.
+
+512
+00:57:19.200 --> 00:57:29.439
+100x Engineers: Jeff can play that quiz with up to 255 options, give you a confidence score that which answer would be more better. Now, that is not binary 1 and…
+
+513
+00:57:29.610 --> 00:57:35.410
+100x Engineers: Zero, or yes and no, but losing among these many answers.
+
+514
+00:57:36.260 --> 00:57:39.799
+100x Engineers: The third type, what Jev calls it, is the score.
+
+515
+00:57:40.010 --> 00:57:42.029
+100x Engineers: Which… is it?
+
+516
+00:57:43.020 --> 00:57:46.190
+100x Engineers: The same thing that I asked all of you when we opened the session.
+
+517
+00:57:46.600 --> 00:57:48.839
+100x Engineers: How are you feeling on a scale of 1 to 10?
+
+518
+00:57:49.370 --> 00:57:58.990
+100x Engineers: Because sometimes you have a score and there's a spectrum of things. You can't just decide like whether zero or one or yes and no, but it could be a scale.
+
+519
+00:57:59.150 --> 00:58:07.240
+100x Engineers: It could be like I'm feeling one, I'm feeling two, I'm feeling like less than five, I'm feeling like ten on ten. So there's a whole spectrum.
+
+520
+00:58:08.150 --> 00:58:10.600
+100x Engineers: Those kind of questions, Jev call it score.
+
+521
+00:58:10.840 --> 00:58:12.970
+100x Engineers: We are the only three type of questions.
+
+522
+00:58:13.170 --> 00:58:19.629
+100x Engineers: And surprisingly, I was very skeptical about this approach, that can we categorize every single
+
+523
+00:58:20.130 --> 00:58:23.500
+100x Engineers: Conditions in every single judgment into these 3 things.
+
+524
+00:58:23.790 --> 00:58:28.499
+100x Engineers: But since it's been, like, almost, like, one and a half weeks since I'm testing Jev.
+
+525
+00:58:28.730 --> 00:58:30.430
+100x Engineers: I realize we can't.
+
+526
+00:58:31.200 --> 00:58:35.739
+100x Engineers: And this is also, I guess, I want to do with all of you, whatever statement that you have written.
+
+527
+00:58:36.730 --> 00:58:38.470
+100x Engineers: Where you had a judgment.
+
+528
+00:58:39.770 --> 00:58:43.919
+100x Engineers: Tell me right now in the chat, and this is a quick quiz to all of you, if you understand
+
+529
+00:58:44.230 --> 00:58:46.380
+100x Engineers: The types of questions that you've asked.
+
+530
+00:58:48.270 --> 00:58:50.759
+100x Engineers: Based on the if condition that you have written.
+
+531
+00:58:52.270 --> 00:58:55.660
+100x Engineers: Where does it fall in these categories?
+
+532
+00:58:56.640 --> 00:58:58.590
+100x Engineers: Is it a yes and no question?
+
+533
+00:58:59.280 --> 00:59:07.980
+100x Engineers: Is it a question based on multiple choice? Is it a question based on a scale of a score from 1 to 10, 1 to 100?
+
+534
+00:59:18.750 --> 00:59:28.940
+100x Engineers: And you can write down your if statement if you are confused, because I can tell you that until now, all the if statements in my code has already been replaced into these three categories.
+
+535
+00:59:29.160 --> 00:59:31.050
+100x Engineers: Wherever I had the judgment.
+
+536
+00:59:43.400 --> 00:59:52.730
+100x Engineers: Well, if you think that it doesn't fall anywhere, then I want you to like just paste your if statement because I can tell you to classify it and how you can make a classification based on these three things.
+
+537
+00:59:57.780 --> 01:00:00.270
+100x Engineers: Now, why I… Share.
+
+538
+01:00:00.430 --> 01:00:01.989
+100x Engineers: 3 Times and the other.
+
+539
+01:00:02.680 --> 01:00:09.279
+100x Engineers: Only two bits you need to understand before you start using a platform like this or a model like this. A, what it takes, which is
+
+540
+01:00:09.370 --> 01:00:26.270
+100x Engineers: As we discussed the state question, the criteria, and B, what are the type of questions you can ask, which is a question based on yes and no, a question based on a choice, a question based on a scale. Once you understand these two things, you can immediately start using this, and you can actually replace a lot of judgment
+
+541
+01:00:26.850 --> 01:00:37.870
+100x Engineers: Based on task which earlier your if statement was not able to solve, your LLM was not able to solve, or maybe even you had a classifier model which was not able to solve. So you can pick those.
+
+542
+01:00:38.050 --> 01:00:42.030
+100x Engineers: Conditions, and you can start using model like this.
+
+543
+01:00:43.200 --> 01:00:46.559
+100x Engineers: However, I want to also make it very clear that what are things that
+
+544
+01:00:47.790 --> 01:00:51.189
+100x Engineers: Jev cannot do. This is the thing which I learned the hard way.
+
+545
+01:00:54.240 --> 01:00:56.310
+100x Engineers: Your code owns every decision.
+
+546
+01:00:57.650 --> 01:01:04.390
+100x Engineers: I won't use Jev to make a final decision. I will only use it to give me the probability score.
+
+547
+01:01:04.840 --> 01:01:11.930
+100x Engineers: But the score then goes into my code and the code is the one which executes everything, so my system stays there.
+
+548
+01:01:12.090 --> 01:01:19.330
+100x Engineers: I will be more confident running that code rather than just handing over everything like what I was doing with the LLMs.
+
+549
+01:01:21.190 --> 01:01:23.360
+100x Engineers: Because at the end of the day, this is still a model.
+
+550
+01:01:25.540 --> 01:01:28.050
+100x Engineers: Question and one request do not talk to each other.
+
+551
+01:01:31.120 --> 01:01:33.220
+100x Engineers: They are parallel and independent.
+
+552
+01:01:34.660 --> 01:01:40.019
+100x Engineers: So, if you have All three types of questions, written for one task.
+
+553
+01:01:41.600 --> 01:01:52.219
+100x Engineers: You want yes and no question, as well as you want a question which can be multiple choice, and you want a question which can be on a scale. You can write all three of questions for one state.
+
+554
+01:01:52.380 --> 01:01:56.520
+100x Engineers: For one thing you are judging and they these can run in parallel.
+
+555
+01:01:57.750 --> 01:02:03.269
+100x Engineers: The only con of this approach while testing it, I realized that you cannot make.
+
+556
+01:02:03.480 --> 01:02:11.039
+100x Engineers: A sequential check with multiple questions. That means you have to make different API calls.
+
+557
+01:02:11.700 --> 01:02:16.020
+100x Engineers: What that means is, If you have two different questions.
+
+558
+01:02:16.480 --> 01:02:31.759
+100x Engineers: And the answer of the second question depends. The first one has to be made a different call in Jev. You can't just write it down as, okay, these are three questions like this. And I can keep adding more and more questions in the same API response.
+
+559
+01:02:33.210 --> 01:02:38.359
+100x Engineers: So I'll write one question, and if my second question's answer depends on this, I'll make another call.
+
+560
+01:02:39.230 --> 01:02:46.109
+100x Engineers: This was never mentioned anywhere, by the way. I figured it out when I was trying to run multiple experiments that.
+
+561
+01:02:46.700 --> 01:02:50.920
+100x Engineers: Jev is doing everything parallelly of now and there is no way for us to.
+
+562
+01:02:51.090 --> 01:02:55.020
+100x Engineers: Make the sequential, conditions work together.
+
+563
+01:02:56.180 --> 01:03:06.839
+100x Engineers: But the parallel thing is actually good in some cases where you don't want to run a related conditions. You can then ask all the questions in the same request, which becomes even more faster.
+
+564
+01:03:08.030 --> 01:03:13.380
+100x Engineers: And last but not the least, which is the confidence is again Jev's number, but not the guarantee.
+
+565
+01:03:14.210 --> 01:03:26.670
+100x Engineers: What I do is I compare this with the threshold of what is actually there. In my experiment, it has performed well and much better than the existing LLMs, all the LLMs I have tested.
+
+566
+01:03:26.790 --> 01:03:32.539
+100x Engineers: Including the Fable models and Astra models, and it is much cheaper, much faster.
+
+567
+01:03:32.940 --> 01:03:39.300
+100x Engineers: With almost equivalent, in some cases, even better, I would say, correctness.
+
+568
+01:03:40.550 --> 01:03:44.440
+100x Engineers: But at the end of the day, it's still a model, so I want all of you to just…
+
+569
+01:03:44.630 --> 01:03:46.480
+100x Engineers: Check it before you do it.
+
+570
+01:04:04.700 --> 01:04:11.890
+100x Engineers: In this case, Jev does not replace, as I said, only one single part.
+
+571
+01:04:12.550 --> 01:04:19.270
+100x Engineers: of… What was the rule-based system, what was the probabilistic system, and what was the
+
+572
+01:04:19.780 --> 01:04:24.660
+100x Engineers: classifier, which we had. It actually replaces and touches all three.
+
+573
+01:04:27.370 --> 01:04:29.149
+100x Engineers: The only difference here is that.
+
+574
+01:04:29.380 --> 01:04:31.279
+100x Engineers: Now, everything becomes…
+
+575
+01:04:31.820 --> 01:04:41.170
+100x Engineers: As good as the question and the criteria that you define, which now puts a lot of responsibility on a person who is defining these things.
+
+576
+01:04:43.330 --> 01:04:47.769
+100x Engineers: A vague question now gets wrong answer faster and cheaper.
+
+577
+01:04:55.820 --> 01:04:59.680
+100x Engineers: What is the framework that… I believe…
+
+578
+01:05:01.120 --> 01:05:03.570
+100x Engineers: All of you can apply on your statement.
+
+579
+01:05:05.620 --> 01:05:11.300
+100x Engineers: Stop calling the models on every single task. That's the first thing.
+
+580
+01:05:12.620 --> 01:05:15.809
+100x Engineers: If you have tried a new agent, if you have tried a new model.
+
+581
+01:05:15.930 --> 01:05:17.990
+100x Engineers: If you have tried a new tool.
+
+582
+01:05:19.210 --> 01:05:29.069
+100x Engineers: Just because it worked for your first task doesn't mean it's gonna work for all the tasks. The models, all the models have their own hallucination rate. Some are bad, some are like quartz.
+
+583
+01:05:29.650 --> 01:05:31.839
+100x Engineers: Especially LLMs, I would say, like…
+
+584
+01:05:31.970 --> 01:05:41.179
+100x Engineers: Wherever you have added LLM in your current code base, in your current project, do check it out and see what are the cases where it can go wrong.
+
+585
+01:05:41.350 --> 01:05:45.730
+100x Engineers: And immediately bucket that whole decision into 3 parts.
+
+586
+01:05:48.420 --> 01:05:51.119
+100x Engineers: This is… The yellow part?
+
+587
+01:05:52.170 --> 01:05:57.270
+100x Engineers: Which… I believe every system should have some things which
+
+588
+01:05:57.450 --> 01:06:00.560
+100x Engineers: Can be still written in a rule-based format.
+
+589
+01:06:02.660 --> 01:06:05.640
+100x Engineers: For example, if you still want to calculate total number of
+
+590
+01:06:06.730 --> 01:06:09.350
+100x Engineers: Invoice, does it add up to the whole number?
+
+591
+01:06:09.830 --> 01:06:11.790
+100x Engineers: I won't even use Jeff for that.
+
+592
+01:06:12.190 --> 01:06:16.710
+100x Engineers: That's a simple math. And I don't need LMS, I don't need agent for it.
+
+593
+01:06:17.250 --> 01:06:23.550
+100x Engineers: And I'll just like write a simple Python logic or whatever language I'm using that logic to add those numbers up.
+
+594
+01:06:24.490 --> 01:06:34.639
+100x Engineers: Classify your task wherever you are making a judgment. Identify what all things you can do it with simple arithmetic. Put it in the code base. Write the rules for it. Write the if condition.
+
+595
+01:06:34.950 --> 01:06:38.119
+100x Engineers: That still works, and that is best solution as of now.
+
+596
+01:06:39.530 --> 01:06:41.959
+100x Engineers: In case it needs a judgment.
+
+597
+01:06:44.050 --> 01:06:46.489
+100x Engineers: Tomato A grade versus tomato grade A.
+
+598
+01:06:47.110 --> 01:06:47.860
+100x Engineers: Great.
+
+599
+01:06:49.550 --> 01:06:56.090
+100x Engineers: Can you define the judgment? Can you define the criteria of what is The right answer.
+
+600
+01:06:56.530 --> 01:06:57.650
+100x Engineers: If yes.
+
+601
+01:06:57.960 --> 01:07:15.139
+100x Engineers: I would start now using Jev instead of going to the LLM model or the classifier model. That is a change which I'm making in my workflows. And I also predict that this becomes kind of a norm, especially a model like this. And once we get more models, I already have a lot of open source models which are doing a similar work.
+
+602
+01:07:15.700 --> 01:07:20.829
+100x Engineers: But this has a drastical change which I have faced that.
+
+603
+01:07:21.390 --> 01:07:26.840
+100x Engineers: Earlier, I might have used the LLM call here, but now I… User Jev.
+
+604
+01:07:27.860 --> 01:07:32.649
+100x Engineers: And I try to write the criteria very clearly. I give the state, I give the questions.
+
+605
+01:07:32.880 --> 01:07:35.160
+100x Engineers: And I define those judgments.
+
+606
+01:07:38.960 --> 01:07:41.179
+100x Engineers: Now, whenever there is something which is…
+
+607
+01:07:41.820 --> 01:07:50.460
+100x Engineers: Unsure. And there are some criterias. I've taken a masterclass, by the way, on this, how do you codify your own judgment? And I've shared one of the insights that
+
+608
+01:07:50.570 --> 01:07:56.330
+100x Engineers: Where actually human plays a role to design a whole workflow with LLMs and agents.
+
+609
+01:07:57.480 --> 01:08:07.460
+100x Engineers: And my answer to that was if you can write the verification criteria, just like how we wrote a criteria of what is the criteria to answer yes and no in that question.
+
+610
+01:08:07.680 --> 01:08:18.540
+100x Engineers: If you can do that for any task, you should start with models like Jeff, and see if it works for you. If it doesn't work, then move to the next step, which is the human-in-the-loop. But…
+
+611
+01:08:18.899 --> 01:08:28.489
+100x Engineers: If you cannot even write the criteria, I would not recommend to use any model, not Jev, not classifier, not even your,
+
+612
+01:08:30.020 --> 01:08:42.530
+100x Engineers: Astra's and Fable on the frontier models. Don't use any of those things if you cannot write the criteria for the job. This is where humans stays in the loop. And based on the Vipassana's law, which is one of the most.
+
+613
+01:08:44.810 --> 01:08:49.510
+100x Engineers: I would say the… important research.
+
+614
+01:08:49.910 --> 01:08:51.029
+100x Engineers: Of Arjun.
+
+615
+01:08:51.890 --> 01:08:56.980
+100x Engineers: There's a whole article written by Jason and verifies.
+
+616
+01:08:58.010 --> 01:09:01.670
+100x Engineers: It has been very simple for us at Hanradek Research.
+
+617
+01:09:02.899 --> 01:09:15.270
+100x Engineers: The Verifiers rule states that the ease of training AI to solve is proportional to how verifiable a task is. All tasks that are possible to solve and easy to verify will be solved by AI.
+
+618
+01:09:15.910 --> 01:09:22.750
+100x Engineers: Which means, if you look at all the numbers, this is the progress on AI benchmarks in the last 5 years.
+
+619
+01:09:23.020 --> 01:09:31.850
+100x Engineers: Every single question, which is a math-based question, a code-based question, all these questions which has a clear criteria of what is the right answer and the wrong answer.
+
+620
+01:09:32.880 --> 01:09:34.279
+100x Engineers: They have performed.
+
+621
+01:09:34.390 --> 01:09:35.790
+100x Engineers: drastically well.
+
+622
+01:09:37.590 --> 01:09:43.620
+100x Engineers: But there are some benchmarks, especially this one is called Humanity's Last Exam.
+
+623
+01:09:44.109 --> 01:09:47.329
+100x Engineers: The progress is… Surprisingly very low.
+
+624
+01:09:48.620 --> 01:09:52.409
+100x Engineers: And the reason is not that this is a hard exam obviously like.
+
+625
+01:09:53.380 --> 01:10:00.639
+100x Engineers: Models which are solving right now questions from Olympiads, those are really difficult for even some of the smartest human beings to solve.
+
+626
+01:10:01.320 --> 01:10:15.940
+100x Engineers: But the only way the model was able to get better is because it had a clear verification criteria. And that is what the verifiers rule state, that anything in your job, it's a second homework, which I'm giving to all of you right now. Write down every single task that you do.
+
+627
+01:10:17.910 --> 01:10:23.509
+100x Engineers: And write a verification criteria of how do you verify what is a good output looks like for that task.
+
+628
+01:10:24.670 --> 01:10:25.949
+100x Engineers: It's gonna be very…
+
+629
+01:10:26.160 --> 01:10:34.659
+100x Engineers: Existential exercise for all of you, by the way, especially some people who will realize that everything that they do is easily verifiable.
+
+630
+01:10:35.040 --> 01:10:47.700
+100x Engineers: Because if that is the category where you belong to today, I would highly, highly encourage you to upskill yourself and spend more of your time into the things which are going to be more judgment heavy, which are going to be
+
+631
+01:10:47.850 --> 01:10:58.459
+100x Engineers: Things that is harder to verify because those are the tasks where we have seen LLMs do not have a clear indication of what is a good and what's a bad output.
+
+632
+01:10:58.900 --> 01:11:01.209
+100x Engineers: What could be a practical example of that?
+
+633
+01:11:02.160 --> 01:11:10.739
+100x Engineers: How to live a good life? What is the video that will go viral? That's a simple question I asked to my brother day before yesterday.
+
+634
+01:11:10.840 --> 01:11:14.199
+100x Engineers: How do you define and how do you tell whether this video will go viral or not?
+
+635
+01:11:14.350 --> 01:11:30.129
+100x Engineers: And he says that although I can tell you that these are the things that Hook needs to work, this needs to work. But the same time, there are a lot of other videos on social media which had all those five things what he said, or maybe like maybe 10, 20 things, but they didn't go viral.
+
+636
+01:11:30.590 --> 01:11:39.730
+100x Engineers: And they didn't have those many views. And that becomes difficult for us, even as human beings, to understand what clicks with people. This is still a bigger question, like, when…
+
+637
+01:11:41.240 --> 01:11:51.810
+100x Engineers: Movie directors or movie producers make a film, they can't predict that whether this movie will go viral or not, or maybe go a blockbuster hit or not. They only get to know once they release it and people react to it.
+
+638
+01:11:52.380 --> 01:11:56.680
+100x Engineers: Because there are a lot of things which are involved, a lot of factors which.
+
+639
+01:11:56.840 --> 01:11:58.620
+100x Engineers: Involved in this kind of decision.
+
+640
+01:11:58.990 --> 01:12:01.100
+100x Engineers: And that is what I still believe.
+
+641
+01:12:01.290 --> 01:12:02.860
+100x Engineers: Gonna be very human lit.
+
+642
+01:12:07.820 --> 01:12:26.589
+100x Engineers: How does this all connect to everything what I was sharing with all of you? This is probably one of the most important piece of work that I've done so far in Anuradhix is helping each and every person to identify and break down their tasks and help them to see what all tasks you do are verifiable or not and use judgment.
+
+643
+01:12:26.590 --> 01:12:32.290
+100x Engineers: and the models like Jev LLMs and other things for those kind of tasks which are verifiable.
+
+644
+01:12:32.530 --> 01:12:50.629
+100x Engineers: And things which can be done with Automatic use code for that, build a workflow and automate as many things as possible in your job immediately. And things where you cannot write the criteria to verify something, you use the human in the loop. This is where the human comes in. And if you define the whole system with humans.
+
+645
+01:12:50.630 --> 01:12:52.930
+100x Engineers: With models and with code.
+
+646
+01:12:53.680 --> 01:13:00.449
+100x Engineers: You have already achieved, what I say, like, the top 1% AI productivity.
+
+647
+01:13:01.340 --> 01:13:08.819
+100x Engineers: Which is some of the students of Hardix Engineers have been able to do that and they have seen a massive impact not only on their own job but
+
+648
+01:13:09.120 --> 01:13:11.570
+100x Engineers: The kind of output they can produce.
+
+649
+01:13:30.970 --> 01:13:33.380
+100x Engineers: I've done a lot of more experiments on Jeff.
+
+650
+01:13:34.140 --> 01:13:48.209
+100x Engineers: And as I said, like, if you give me, like, more time, I could probably, like, spend an entire day talking to all of you guys, and sharing all these interesting research which I had, and some findings. What I'm gonna do, because I'm gonna save some time, and
+
+651
+01:13:48.370 --> 01:13:51.349
+100x Engineers: I I wanna like pack this up into a really.
+
+652
+01:13:51.500 --> 01:13:57.589
+100x Engineers: Compressed insightful resource, so I'll share all these insights, the experiments which I ran, the output.
+
+653
+01:13:58.660 --> 01:14:08.259
+100x Engineers: As a post read resource which is going to be available for all the people who have joined this live. So this is going to be an exclusive gift for all of you completely for free.
+
+654
+01:14:24.020 --> 01:14:31.469
+100x Engineers: Yeah, this is the end where I'll basically finish the whole bit so that you will see what is the difference between before and after.
+
+655
+01:14:31.690 --> 01:14:33.520
+100x Engineers: And I hope, by this point.
+
+656
+01:14:34.730 --> 01:14:38.899
+100x Engineers: At least you can take away the core first principle, which is again my way of.
+
+657
+01:14:39.080 --> 01:14:42.230
+100x Engineers: Thinking, learning, as well as teaching, is that
+
+658
+01:14:43.640 --> 01:14:48.639
+100x Engineers: If you just teach people about tools, The knowledge is only relevant.
+
+659
+01:14:49.000 --> 01:14:50.749
+100x Engineers: Until there's a…
+
+660
+01:14:51.090 --> 01:15:05.380
+100x Engineers: A tool in the market. The moment there is a better tool, everything what you have taught or what you have learned is now just lost. But if I teach somebody a principle, principle on how that tool was built, what are the things that it is doing?
+
+661
+01:15:05.470 --> 01:15:11.409
+100x Engineers: Even if there's a better tool, you can upskill and you can compound and take away those learnings.
+
+662
+01:15:11.780 --> 01:15:26.679
+100x Engineers: And that is why I made this entire session more focused on the principles, not on the Jev as a tool. And you will see, and you can mark my words here, that in exactly six months, you will see this entire workflow getting embedded into every other AI system.
+
+663
+01:15:27.360 --> 01:15:31.300
+100x Engineers: And hopefully, by that time, you can recall me and…
+
+664
+01:15:31.560 --> 01:15:34.510
+100x Engineers: I'll send you, like, some of the free resources as well.
+
+665
+01:15:34.650 --> 01:15:36.910
+100x Engineers: This is the before after story.
+
+666
+01:15:37.980 --> 01:15:43.889
+100x Engineers: As of now, at Hanadex Engineers, where we have been deploying a lot of models in production, we have
+
+667
+01:15:44.170 --> 01:15:45.260
+100x Engineers: earlier.
+
+668
+01:15:45.480 --> 01:16:04.250
+100x Engineers: A lot of these resources where human judgment was crucial and we could not use LLMs because of the HALs. We didn't have enough time to train a classifier model and the rule-based system breaks there. So we kept all those workflows very human-led. But now, because the judgment becomes much more cheaper.
+
+669
+01:16:04.430 --> 01:16:13.329
+100x Engineers: The entire cost of this whole thing with Jevs is, like, probably, like, 200 times cheaper than anywhere.
+
+670
+01:16:13.530 --> 01:16:22.330
+100x Engineers: In fact, if you go to a website called Open Router right now, and you will check the Jev's pricing, the output pricing per million token is almost zero.
+
+671
+01:16:23.500 --> 01:16:30.099
+100x Engineers: And the input is like almost like 1/10 or maybe like I think 1/40 of what any Frontier AI model is.
+
+672
+01:16:30.510 --> 01:16:32.550
+100x Engineers: So the question becomes that.
+
+673
+01:16:32.830 --> 01:16:39.720
+100x Engineers: When judgment becomes cheaper, What happens? And this is the same question which
+
+674
+01:16:40.010 --> 01:16:46.080
+100x Engineers: There's a very interesting person who has asked His name is… William Jevons.
+
+675
+01:16:47.750 --> 01:16:49.290
+100x Engineers: William Javan said that.
+
+676
+01:17:02.660 --> 01:17:05.160
+100x Engineers: Whenever you make something more efficient.
+
+677
+01:17:07.970 --> 01:17:09.929
+100x Engineers: For example, the LLM's cost.
+
+678
+01:17:11.080 --> 01:17:13.599
+100x Engineers: And the output was, like, much expensive.
+
+679
+01:17:13.710 --> 01:17:22.590
+100x Engineers: But with Jeff, what the company is trying to do is they are making it much more efficient, like almost like 200 times more cheaper and efficient and faster.
+
+680
+01:17:27.130 --> 01:17:34.159
+100x Engineers: William Jevons, who has named this thing called Jevons Paradox, has already observed this.
+
+681
+01:17:35.780 --> 01:17:38.830
+100x Engineers: That when you make a resource more efficient to use.
+
+682
+01:17:40.540 --> 01:17:45.869
+100x Engineers: The overall consumption of that resource increases. He observed this with steam engine.
+
+683
+01:17:45.980 --> 01:17:51.649
+100x Engineers: He saw that when steam engines got efficient, he initially thought it'll use less coal.
+
+684
+01:17:51.750 --> 01:18:05.489
+100x Engineers: In the country, but opposite happened. When steam engines got more efficient, everybody started using steam engine for every other work. People find all the creative new ways to use that resource if something is cheaper.
+
+685
+01:18:06.540 --> 01:18:08.240
+100x Engineers: Milk was expensive.
+
+686
+01:18:10.430 --> 01:18:11.390
+100x Engineers: In…
+
+687
+01:18:12.230 --> 01:18:18.710
+100x Engineers: Like 100 or 200 years ago. But when we had the whole consumption of milk which went up and we had now production.
+
+688
+01:18:18.980 --> 01:18:31.040
+100x Engineers: And we had, like, oversupply, and we started, like, coming up with all the new crazy ideas of putting milk everywhere. We have cheese, we have curd, we have yogurt, we have 100 things. That's the same thing which is gonna happen with judgment, I believe.
+
+689
+01:18:34.640 --> 01:18:44.919
+100x Engineers: So wherever I have all these conditions, if it costs me almost like nothing or like very less, I would start using the judgment.
+
+690
+01:18:45.070 --> 01:18:51.570
+100x Engineers: from the Jev models and models like this. And this is how my workflow gonna look like.
+
+691
+01:18:51.800 --> 01:19:10.669
+100x Engineers: Where earlier it was completely human-led. Now I'll start dividing into three parts, the framework which I gave you. Just think about the yellow, purple, and the green. The green is where the human stays. The yellow is where the code stays, which is the rule-based system. The purple is where the judgment stays, which is the Jev and the model-based systems.
+
+692
+01:19:11.180 --> 01:19:13.270
+100x Engineers: And I define all of these things.
+
+693
+01:19:13.550 --> 01:19:16.699
+100x Engineers: Good part is, I can ask as many questions as I can.
+
+694
+01:19:17.340 --> 01:19:19.190
+100x Engineers: I don't need to depend on…
+
+695
+01:19:19.680 --> 01:19:26.810
+100x Engineers: LLMs and the hallucination of LLMs, I don't need to also build a new classifier every single time. I also don't need to
+
+696
+01:19:27.440 --> 01:19:30.740
+100x Engineers: Think about like a very specific rigid rule-based systems.
+
+697
+01:19:30.870 --> 01:19:39.540
+100x Engineers: It gives me a benefit of all those three, and I can start adding this. This becomes one of the way of, like, how I start building now the more and more workflows.
+
+698
+01:19:45.500 --> 01:19:54.779
+100x Engineers: And this is the most important takeaway, I would say, if you can learn from this whole session. It's not about that, hey, there's a new model in the town, we should all use it.
+
+699
+01:19:57.730 --> 01:20:00.099
+100x Engineers: Two weeks ago, before the launch of Jev AI,
+
+700
+01:20:00.680 --> 01:20:05.180
+100x Engineers: I used to ask this question to me and to my students that, hey, can I afford a model?
+
+701
+01:20:05.450 --> 01:20:07.220
+100x Engineers: On every single invoice.
+
+702
+01:20:07.450 --> 01:20:16.229
+100x Engineers: Or on all of these things, because the cost was a factor. And the token cost is, as you know, like its consumption is making everything more and more expensive.
+
+703
+01:20:16.530 --> 01:20:18.970
+100x Engineers: But today, that question has changed.
+
+704
+01:20:19.170 --> 01:20:22.719
+100x Engineers: And the question has come to, can I write the question?
+
+705
+01:20:23.300 --> 01:20:26.030
+100x Engineers: Can I write the verifier?
+
+706
+01:20:26.190 --> 01:20:28.510
+100x Engineers: Can I write the criteria to…
+
+707
+01:20:28.700 --> 01:20:31.009
+100x Engineers: Prove that this answer is right or wrong.
+
+708
+01:20:31.810 --> 01:20:34.660
+100x Engineers: Which is actually making us much closer to the.
+
+709
+01:20:35.120 --> 01:20:36.600
+100x Engineers: Verifiers rule.
+
+710
+01:20:38.460 --> 01:20:41.729
+100x Engineers: That if you can write the verifier, verifier.
+
+711
+01:20:43.330 --> 01:20:46.129
+100x Engineers: There's… Almost now.
+
+712
+01:20:47.210 --> 01:20:48.720
+100x Engineers: Gonna be a huge.
+
+713
+01:20:49.230 --> 01:20:52.429
+100x Engineers: Rise in the class that's gonna see the automation boom.
+
+714
+01:20:52.730 --> 01:20:58.700
+100x Engineers: Because the only thing which is limiting those judgments is Is there a verification criteria?
+
+715
+01:20:58.850 --> 01:21:00.260
+100x Engineers: Can it be written down?
+
+716
+01:21:00.460 --> 01:21:09.480
+100x Engineers: Can you prove the answer is right? And if yes, then cost is no longer a bottleneck, which changes every single decision when you design a better system.
+
+717
+01:21:21.630 --> 01:21:30.230
+100x Engineers: With this… I'll put this masterclass section on the end.
+
+718
+01:21:30.990 --> 01:21:36.309
+100x Engineers: I'll just quickly tell you that what all things I have added here, and what all things
+
+719
+01:21:37.540 --> 01:21:38.890
+100x Engineers: I'm gonna share with you.
+
+720
+01:21:39.790 --> 01:21:44.599
+100x Engineers: In the left hand section, in the right hand part, if you notice.
+
+721
+01:21:45.050 --> 01:21:49.389
+100x Engineers: In the last 1 hour, 60 to 80 minutes, what I've been talking to all of you guys.
+
+722
+01:21:50.230 --> 01:21:53.660
+100x Engineers: This was the first principle of using Jev.
+
+723
+01:21:53.800 --> 01:22:00.960
+100x Engineers: Understanding the state, questions, the criterias, how the API accepts these Thing.
+
+724
+01:22:01.660 --> 01:22:03.369
+100x Engineers: The types of questions.
+
+725
+01:22:03.890 --> 01:22:05.759
+100x Engineers: The three rules and three tests.
+
+726
+01:22:06.040 --> 01:22:09.839
+100x Engineers: And the way how we implement it in a real world problem.
+
+727
+01:22:10.460 --> 01:22:19.229
+100x Engineers: What I cannot do, and I'm gonna be honest with you, in just any session, I don't think, like, you can also learn this from any recorded video.
+
+728
+01:22:19.990 --> 01:22:23.819
+100x Engineers: You cannot apply this whole framework for.
+
+729
+01:22:25.620 --> 01:22:29.650
+100x Engineers: Your own example just by watching me, you have to do it by yourself.
+
+730
+01:22:29.930 --> 01:22:36.480
+100x Engineers: And that is where the most people will face difficulty. Even in the chat, I was looking at it. There are folks who are still skeptical that
+
+731
+01:22:36.500 --> 01:22:53.829
+100x Engineers: my if statement or my condition for automating something does not land into these three buckets, how should I go ahead? Or I don't know exactly what kind of state I should use, what kind of question I should ask. And these are the things which is going to be more personal to you, for your data, for your work.
+
+732
+01:22:54.070 --> 01:22:55.750
+100x Engineers: And probably, like.
+
+733
+01:22:55.990 --> 01:22:59.880
+100x Engineers: Not me or not anyone can actually, like, give you in the video or in the lecture.
+
+734
+01:23:03.500 --> 01:23:05.500
+100x Engineers: This is where you need to put some reps.
+
+735
+01:23:06.000 --> 01:23:11.870
+100x Engineers: And, to be honest, like, these reps is exactly what I believe
+
+736
+01:23:13.380 --> 01:23:17.290
+100x Engineers: You can do when you have people around you, which are also.
+
+737
+01:23:18.150 --> 01:23:20.010
+100x Engineers: Motivated to learn the same thing.
+
+738
+01:23:22.630 --> 01:23:25.210
+100x Engineers: We do a whole six-month journey.
+
+739
+01:23:25.600 --> 01:23:26.569
+100x Engineers: To do this.
+
+740
+01:23:27.750 --> 01:23:45.729
+100x Engineers: right-hand side section. Because I know everyone out there, and that's the whole reasoning behind taking this masterclass, that anyone in the world can share the knowledge about new tools and new things, which is going to be free for everyone. That's why I don't charge anything for my masterclasses.
+
+741
+01:23:45.860 --> 01:23:49.910
+100x Engineers: Because you can take this information from me, or maybe from someone else,
+
+742
+01:23:50.300 --> 01:23:53.500
+100x Engineers: And I think this should be free. That's how the education should be.
+
+743
+01:23:53.690 --> 01:24:01.269
+100x Engineers: But the value actually comes not from watching somebody, it's actually applying it into your job, into your world, in your data.
+
+744
+01:24:01.580 --> 01:24:03.160
+100x Engineers: And that is.
+
+745
+01:24:03.650 --> 01:24:08.190
+100x Engineers: Practice, right? Like… This is what,
+
+746
+01:24:08.370 --> 01:24:10.870
+100x Engineers: We do, and let me move to the…
+
+747
+01:24:14.730 --> 01:24:17.410
+100x Engineers: This is why we have designed this whole program.
+
+748
+01:24:29.500 --> 01:24:33.300
+100x Engineers: And I'll take question answers right after this, but
+
+749
+01:24:34.100 --> 01:24:39.409
+100x Engineers: Before I take the questions, I just wanted to share something slightly more personal.
+
+750
+01:24:39.540 --> 01:24:40.760
+100x Engineers: This is about…
+
+751
+01:24:42.390 --> 01:24:51.109
+100x Engineers: Three years ago, I took a very similar webinar, and I still remember the day, because this was ChatGPT 3.5 launched, and everybody…
+
+752
+01:24:51.390 --> 01:24:53.780
+100x Engineers: Was… talking about it.
+
+753
+01:24:54.090 --> 01:24:58.730
+100x Engineers: And I thought, instead of me just telling people, okay, there's a new model.
+
+754
+01:24:58.830 --> 01:25:18.240
+100x Engineers: And show some fancy demos, which anyone can do on Twitter, on YouTube, and get millions of views. I started just writing down and researching myself that where exactly this model is helpful for an engineer like me. And I thought I'll share it with the world and hope that it will help other people. Surprisingly, it did really well.
+
+755
+01:25:18.430 --> 01:25:20.489
+100x Engineers: A lot of people found it helpful.
+
+756
+01:25:20.890 --> 01:25:24.789
+100x Engineers: And, with the exact same goal.
+
+757
+01:25:25.390 --> 01:25:28.549
+100x Engineers: Since last 3 years, I've been doing it every single day.
+
+758
+01:25:28.840 --> 01:25:33.039
+100x Engineers: Whenever a new technology, a new research comes out.
+
+759
+01:25:33.640 --> 01:25:52.939
+100x Engineers: I sit down, I research about it, I learn more about it, apply it in production, see where it makes sense, where it doesn't make sense. Instead of showing you flashy demos and some cool party tricks, what I do is I just tell you the most boring things, but the things which actually works in production, things which actually gives you the impact.
+
+760
+01:25:53.820 --> 01:26:01.090
+100x Engineers: And to be honest, I did not thought of like starting a business when I was doing all of this. The entire goal was very personal.
+
+761
+01:26:01.220 --> 01:26:02.130
+100x Engineers: And.
+
+762
+01:26:05.550 --> 01:26:09.950
+100x Engineers: My mom and me, we both have learned from the same book.
+
+763
+01:26:10.230 --> 01:26:12.490
+100x Engineers: I went to a CBST school in India.
+
+764
+01:26:12.790 --> 01:26:18.409
+100x Engineers: And I have read exactly the same book what my mom read probably like 20, 30 years ago.
+
+765
+01:26:19.550 --> 01:26:21.240
+100x Engineers: And I gave the same exam.
+
+766
+01:26:22.600 --> 01:26:26.320
+100x Engineers: And that is something which bothers me a lot. In the age of AI.
+
+767
+01:26:26.430 --> 01:26:41.819
+100x Engineers: Where every new week there's a new model getting released, there's a new technology, there's a new tool which is changing the whole way of how we think, how we build solutions. Our education system still teaching us the same thing, which was like my mom and dad was learning back in their day.
+
+768
+01:26:44.900 --> 01:26:48.289
+100x Engineers: And I think, like, that is kind of, like, just completely…
+
+769
+01:26:48.620 --> 01:26:58.009
+100x Engineers: like, messed up as a whole system. And imagine, like, we are betting our entire future generation to go through the same journey, and then expect them to become employable. And…
+
+770
+01:26:58.010 --> 01:27:10.980
+100x Engineers: I'm not surprised at all when I look at the hiring numbers, because I've done right now the whole placement, Sela 100X Engineers, we help people to get replaced as AI engineers and AI native professionals. And I look at the reports where
+
+771
+01:27:11.500 --> 01:27:18.120
+100x Engineers: There are almost, like, more than 1.5 million engineers out there?
+
+772
+01:27:18.270 --> 01:27:21.650
+100x Engineers: And only 20% of them are employable.
+
+773
+01:27:21.880 --> 01:27:31.850
+100x Engineers: They are professional engineers. They have spent four years of their time into learning things, but only 20% of them are employable. I'm not saying employed, but I'm saying employable.
+
+774
+01:27:32.750 --> 01:27:42.300
+100x Engineers: And again, that whole thing, like, bothers me a lot. It bothers me enough so that I do something about it, and I take some action. This is, like, why I've been, like.
+
+775
+01:27:42.520 --> 01:27:59.400
+100x Engineers: Sharing all of these from the last 3 years, and fortunately, like, it helped not only me, but along with us, 80,000 people across the globe, and they resonated with the whole idea. They resonated that, yes, there needs to be something which has to change about how we learn new technology.
+
+776
+01:27:59.490 --> 01:28:10.270
+100x Engineers: New concepts, new principles. It cannot be the same old-fashioned way of going through the textbook and sitting for the exams in the age of AI where anyone can do it.
+
+777
+01:28:11.510 --> 01:28:19.319
+100x Engineers: And and yeah, that's basically, like, one of the reasons why I thought maybe this… this is something which can help people. So…
+
+778
+01:28:20.110 --> 01:28:20.800
+100x Engineers: Oh.
+
+779
+01:28:21.140 --> 01:28:23.860
+100x Engineers: We built this whole six-month program, six-month journey.
+
+780
+01:28:25.150 --> 01:28:26.600
+100x Engineers: And I watched this.
+
+781
+01:28:26.660 --> 01:28:41.370
+100x Engineers: every single time. This is the 9th series we are doing. We have done it, like, 8th cohort. Like, I've done one more before 8, I started my first one. So technically, like, 9 cohorts I have done, and I've seen all the sleepless nights of my students, and
+
+782
+01:28:41.370 --> 01:28:48.719
+100x Engineers: All the things that they have done, they have built. I'm really proud of every single person who has learned from me and who has learned and worked with us.
+
+783
+01:28:48.720 --> 01:28:59.640
+100x Engineers: Because it's a very different feeling, which I cannot give through the slides. Although my team is asking me right now to share all the relevant information with all of you guys.
+
+784
+01:29:00.730 --> 01:29:09.549
+100x Engineers: I just want to take a pause before I share the logistics of the whole program and the curriculum because I think I cannot give you that feeling.
+
+785
+01:29:10.000 --> 01:29:18.669
+100x Engineers: I cannot, like, give you the feeling of, like, when somebody goes through a transformation journey, where they actually change themselves, they change how they think, they change how they…
+
+786
+01:29:18.790 --> 01:29:21.189
+100x Engineers: Behave, they change how they build systems.
+
+787
+01:29:23.150 --> 01:29:27.930
+100x Engineers: I can't do justice by just showing you some numbers, maybe some success stories through the slides.
+
+788
+01:29:28.980 --> 01:29:31.170
+100x Engineers: I can only tell you that this is real.
+
+789
+01:29:31.590 --> 01:29:39.279
+100x Engineers: The way also you can look at this and maybe like find whether it's real or not by going to one of our.
+
+790
+01:29:39.710 --> 01:29:43.040
+100x Engineers: Public challenge, so I run something called.
+
+791
+01:29:43.320 --> 01:29:45.790
+100x Engineers: 0 to 100x Engineers on LinkedIn.
+
+792
+01:29:46.210 --> 01:29:49.800
+100x Engineers: And if you want to just get a gist of what people are building.
+
+793
+01:29:50.810 --> 01:29:53.099
+100x Engineers: You can type this on LinkedIn.
+
+794
+01:29:53.420 --> 01:29:56.030
+100x Engineers: Completely not biased.
+
+795
+01:29:56.220 --> 01:30:03.860
+100x Engineers: It's exactly what people are doing. There are folks who are right now building, solving problems for 100 days for probably like
+
+796
+01:30:04.130 --> 01:30:09.510
+100x Engineers: Using these… all the new things, and this stuff… And,
+
+797
+01:30:12.810 --> 01:30:24.860
+100x Engineers: You can go through that. And it's very different to, like, as I said, like, to just compress it down for me to, like, actually, in the slide deck. And I said I can only just hope… I can hope that
+
+798
+01:30:25.480 --> 01:30:32.289
+100x Engineers: All of you who are listening to me right now or watching this will get to feel at least once in your life.
+
+799
+01:30:32.650 --> 01:30:39.649
+100x Engineers: What it feels like to pour yourself completely into something and experience the pure joy of building.
+
+800
+01:30:40.220 --> 01:30:41.490
+100x Engineers: And.
+
+801
+01:30:41.720 --> 01:30:43.819
+100x Engineers: Just do it once.
+
+802
+01:30:45.250 --> 01:30:46.610
+100x Engineers: To create the impact.
+
+803
+01:30:46.970 --> 01:30:50.019
+100x Engineers: And, not just learn things.
+
+804
+01:30:50.690 --> 01:30:55.079
+100x Engineers: For the sake of learning, for just making you feel and.
+
+805
+01:30:55.500 --> 01:31:04.610
+100x Engineers: Become smarter in front of your peers so that you have new statements or new tools or new jargons you can share, but do it for the right column.
+
+806
+01:31:04.650 --> 01:31:15.120
+100x Engineers: Do it for the thing so that you can apply these things in your job, you can make yourself more efficient, you can make… you can create some kind of impact. And if you kind of also resonate with that idea.
+
+807
+01:31:15.120 --> 01:31:34.690
+100x Engineers: What I'll do before I, like, even go through all those things, talk about, like, how I have personally helped OpenAI and Indian government. I took a workshop for Indian government intelligence services to help them build these kind of same AI workflows on the same principles. My co-founder and I, we also, like, designed the courses for Meta to help the, right now, probably, like.
+
+808
+01:31:34.690 --> 01:31:43.700
+100x Engineers: hundreds of millions of people who are taking these courses from these two organizations and building their AI agents and things like that. But I think those things are not…
+
+809
+01:31:43.770 --> 01:31:47.379
+100x Engineers: So important, at least in my eyes, but what is the most important thing is
+
+810
+01:31:52.520 --> 01:32:06.960
+100x Engineers: That there are folks, there are real people who are applying these things and they're changing their lives. And they were like, not any different. They were just like all of you guys who are listening. And someday they decided that, hey, okay, I think it's, I'm done watching.
+
+811
+01:32:07.180 --> 01:32:21.980
+100x Engineers: Enough videos, enough courses, enough lectures, and something I need to change about how I learn, how I build. I need to find people like me who can lock in for the next six months. And the only thing which we'll do is we build.
+
+812
+01:32:22.660 --> 01:32:27.700
+100x Engineers: So probably this is the best way to describe 100X Engineers program is that this is the building playground.
+
+813
+01:32:27.700 --> 01:32:43.969
+100x Engineers: If you love building, if you learn by building, I think this is going to be the best place for you. Not because I am the best teacher. I believe we have the best community of people like us. There's a guy called Yatin. He's actually much older than me, probably in the mid-40s and mid-50s.
+
+814
+01:32:46.690 --> 01:33:02.339
+100x Engineers: He came here completely non-technical person, by the way, as a… And he had a very interesting sense of music. He ended up converting that music sense into an AI model, which can now design a personalized sound generation for brands.
+
+815
+01:33:02.610 --> 01:33:06.709
+100x Engineers: It built that entire thing which earlier these companies.
+
+816
+01:33:06.730 --> 01:33:21.169
+100x Engineers: Otherwise, we would need to hire sound engineers and designers to have a custom things. Just imagine, like, when people design their logos, they hire a designer. Earlier, when they designed their own custom songs and the music, they used to hire these sound designers.
+
+817
+01:33:21.170 --> 01:33:30.179
+100x Engineers: There were like apps like Suno AI and other things, but nothing was giving these companies a personalization like a Figma for that. He ended up building it.
+
+818
+01:33:30.180 --> 01:33:37.229
+100x Engineers: Launched it for Bata. Right now it's like rolling out across all India in every single store. It was started as a capstone project.
+
+819
+01:33:37.760 --> 01:33:40.380
+100x Engineers: Already got 17 lakhs as a revenue.
+
+820
+01:33:40.720 --> 01:33:42.830
+100x Engineers: While he was building the entire things.
+
+821
+01:33:42.990 --> 01:33:49.360
+100x Engineers: Imagine the kind of impact. He kind of created a whole new category of how and where the AI model can be used.
+
+822
+01:33:52.980 --> 01:34:05.010
+100x Engineers: Adnan has also done something similar, which is like he's converted. He left his like 14 lakh per year remote job, started a services company. He's like now helping like businesses to get more outcomes.
+
+823
+01:34:05.130 --> 01:34:09.129
+100x Engineers: Emergent is the fastest growing company in India, like, for…
+
+824
+01:34:09.250 --> 01:34:25.949
+100x Engineers: in building these vibe coding solutions. These guys have written a very interesting verifier solution for AI content creation, and they have built these workflows from these same principles which I was teaching you guys, and now they are solving problems for Emergent. And you can see the numbers of Emergent, and it actually, like, reflects back that
+
+825
+01:34:26.070 --> 01:34:41.469
+100x Engineers: how their marketing campaigns are growing up, and how their content creation game is growing up, because there are, like, people behind it who are solving the problems from first principles. And it works, it shows in the impact. I don't need to, like, tell somebody that, hey, like. Okay.
+
+826
+01:34:41.940 --> 01:34:54.640
+100x Engineers: This is like the thing which you need to learn because I know it works and it works for companies who are like growing fastest right now and who have been like delivering things.
+
+827
+01:34:55.480 --> 01:34:56.160
+100x Engineers: Okay.
+
+828
+01:34:58.550 --> 01:35:05.959
+100x Engineers: It also worked for a company like T-Series. If you don't know, this is one of the biggest, I think second most subscribed
+
+829
+01:35:07.290 --> 01:35:09.490
+100x Engineers: YouTube channel,
+
+830
+01:35:10.010 --> 01:35:29.289
+100x Engineers: Also a media production company in India. Built a lot of company, a lot of movies. Amit Das, which was one of my students, he got hired. He was the first ever AI film director in the country. There was no role like this at T-Series. T-Series reached out to us. We had to figure out some problems that what are the things?
+
+831
+01:35:29.290 --> 01:35:33.829
+100x Engineers: We can solve with AI, which their existing workflow does not solve.
+
+832
+01:35:34.550 --> 01:35:47.309
+100x Engineers: I built the same three diagrams. Like what part goes into the human in the loop? We can't verify those things. What part where we have the judgment and we can write criteria, we use a model and what part we should keep deterministic.
+
+833
+01:35:47.680 --> 01:35:52.770
+100x Engineers: Ended up realizing that there are a lot of parts where the judgment can actually now go to the model.
+
+834
+01:35:53.000 --> 01:36:09.710
+100x Engineers: More specifically today now, the models like Jev and Amit actually built a very interesting workflow for them. And they realized that every single thing what they've been doing and building these micro dramas and micro movies can be actually done much faster and in a much more efficient way with these workflows.
+
+835
+01:36:10.780 --> 01:36:13.210
+100x Engineers: He's kind of creating a whole new category again.
+
+836
+01:36:13.400 --> 01:36:19.019
+100x Engineers: What like the how the AI movie is gonna be about
+
+837
+01:36:22.510 --> 01:36:38.019
+100x Engineers: We used to talk about the logistics, how this entire thing happens, and how we run it. We do Fridays and Saturdays, these are live sessions, 6pm IST onwards. Along with that, we do office hour sessions. In lectures, exactly what you experienced today, this happens where
+
+838
+01:36:38.600 --> 01:36:50.230
+100x Engineers: I bring my research, I share the results with all of you, and I'll give you some homeworks, I'll give you some tasks, and you perform those tasks, like, live during the session. And once you perform these things, you'll get to know that, hey.
+
+839
+01:36:50.230 --> 01:36:59.809
+100x Engineers: In my statement or for my data, actually, this does not fit. So what can I do? And then we figure it out. And once you start building those things.
+
+840
+01:37:00.340 --> 01:37:01.300
+100x Engineers: You…
+
+841
+01:37:01.760 --> 01:37:10.279
+100x Engineers: You don't… you not only build this alone, but you build it with, like, 100 other people who are as motivated as you, and you learn from each other.
+
+842
+01:37:11.750 --> 01:37:18.330
+100x Engineers: Then you do the office hours, which is where we break you down into the smaller groups based on your goal. If you want to start a business, we don't.
+
+843
+01:37:18.690 --> 01:37:24.620
+100x Engineers: 100x incubation program, where we have helped incubate, in the incubation of AI startups.
+
+844
+01:37:24.990 --> 01:37:40.430
+100x Engineers: As of now, probably there are 20 plus founders who have gone from idea to their first revenue. We don't measure valuation, but we measure the real revenue because that's the impact I believe we can create or founders can create for someone's life.
+
+845
+01:37:45.400 --> 01:38:05.319
+100x Engineers: This entire program runs for six months. And at the end of it, we do a demo day. So we call all of you guys in the Bangalore. I personally help people here to get to the next steps. If you want to get a job, if you want to upskill yourself, or if you want to start your own business, we invite people who can potentially help with you and collab with you.
+
+846
+01:38:05.890 --> 01:38:11.529
+100x Engineers: The minimum requirement here is 8 to 12 hours. And if all of those things, like, sound something that
+
+847
+01:38:11.630 --> 01:38:19.480
+100x Engineers: Maybe you can… But you have, like, 8 to 12 hours into… Per week.
+
+848
+01:38:20.080 --> 01:38:21.870
+100x Engineers: For your learning investment.
+
+849
+01:38:22.110 --> 01:38:22.980
+100x Engineers: And.
+
+850
+01:38:23.110 --> 01:38:27.340
+100x Engineers: You kind of like the approach of building things and learn by building.
+
+851
+01:38:27.570 --> 01:38:30.430
+100x Engineers: I'll… I request you to…
+
+852
+01:38:30.890 --> 01:38:35.660
+100x Engineers: Send me your application, because I'm very picky about what kind of people I work with.
+
+853
+01:38:43.210 --> 01:38:46.269
+100x Engineers: As you know that, we did not…
+
+854
+01:38:46.550 --> 01:38:57.879
+100x Engineers: Like, I personally did not start this, the whole business as an edtech company. In fact, like, I still call myself, like, as an instructor, and we are just helping people and teaching them about AI. The goal…
+
+855
+01:38:57.910 --> 01:39:15.119
+100x Engineers: Was never to like run maybe 100 instructors team and do 100 cohorts or maybe like build another thing here and do that. From last three years since I took the first webinar on ChatGPT to this webinar, I've been doing only one and one thing, which is this cohort and this teaching.
+
+856
+01:39:15.320 --> 01:39:21.399
+100x Engineers: And this research on Yeah, that's the only thing which I do when I wake up and I sleep.
+
+857
+01:39:21.950 --> 01:39:24.340
+100x Engineers: All of my time goes into this.
+
+858
+01:39:24.770 --> 01:39:38.809
+100x Engineers: Me and my co-founder, we are the people who will take the majority of the classes. I take almost like three months of classes in this program. My co-founder takes a month and then we have a few of our alumni who come and share their journey. But it's going to be only run by founders.
+
+859
+01:39:39.470 --> 01:39:54.539
+100x Engineers: And that's also why I believe, like, everything here is very personal, and something which is… I don't think you might be able to experience it anywhere else. But having said that, that also puts a lot of limitations on us as a company, because
+
+860
+01:39:55.090 --> 01:39:59.589
+100x Engineers: Again, I don't want to raise capital for it, because I know this is not a billion dollar business idea for
+
+861
+01:39:59.650 --> 01:40:15.220
+100x Engineers: in the venture capital. It's something which I am doing personally because I felt the problem of how bad the education system is. And I think it might take me maybe 10, 20, 30 years, or maybe the entire rest of my life to figure out, can we solve the problem or not? And I'm okay with that.
+
+862
+01:40:16.710 --> 01:40:28.979
+100x Engineers: But while I'm doing it, I want to work with the most high-ambitious people, high-agency people, and I have limited number of hours per day, limited number of people I can help. So, we have.
+
+863
+01:40:29.190 --> 01:40:49.769
+100x Engineers: I would say, like, very, very limited slots right now, and I work with folks only when I feel that I can add value in your life, or to… in a day-to-day job. So, if you want to know whether this program can help you, whether I can help you, whether, like, my team can help you, scan the code, you can apply for this, you don't, again, need to pay anything for that. The… the conversation is free. You can…
+
+864
+01:40:50.020 --> 01:40:52.079
+100x Engineers: Send your application
+
+865
+01:40:52.540 --> 01:41:07.000
+100x Engineers: Tell us what the if statement you have written, tell us what problems you are trying to solve, and we'll tell you whether we can help you or not. And if we can, we definitely would love to work with you, solve those problems, build with you for the next 6 months, and maybe, like, even after that.
+
+866
+01:41:07.000 --> 01:41:20.900
+100x Engineers: Right now, it's an early bird going on, so you can actually get the whole 6-month journey in a much more discounted price, which is $1,49,000. The regular pricing is $1,79,000.
+
+867
+01:41:21.200 --> 01:41:26.479
+100x Engineers: If you're a student, you can apply for the scholarship, so you can also, like, reach out to our team regarding that.
+
+868
+01:41:27.360 --> 01:41:32.970
+100x Engineers: Having said that, I will now move to the Q&A. So if you have any questions, you've been waiting, I know.
+
+869
+01:41:33.240 --> 01:41:36.890
+100x Engineers: You can now put all of those things in the Q&A box.
+
+870
+01:41:54.400 --> 01:42:08.189
+100x Engineers: Yes, I will share the deck with all of you guys, including all the notes, all the findings from my research of using JVI from last one and a half weeks. So that is a special resource which is going to be only available for the people who have joined today.
+
+871
+01:42:12.630 --> 01:42:23.559
+100x Engineers: What is in the backend that is different than LLM? Make sure Jev does not hallucinate or differ from the LLM in predicting or outputting the probability score. Interesting question.
+
+872
+01:42:24.020 --> 01:42:28.249
+100x Engineers: The difference here is how LLM works and how Jev works.
+
+873
+01:42:28.680 --> 01:42:41.000
+100x Engineers: We all don't know right now, to be honest, because Jev has made a lot of these things very confidential. But I have tried both the open source models, which are equivalent of what Jev can do today.
+
+874
+01:42:41.980 --> 01:42:47.149
+100x Engineers: Know from my research as of as of now that they are not using the language model.
+
+875
+01:42:48.100 --> 01:42:54.989
+100x Engineers: As the core to make the decision, which is the main difference, they are still using a mix of.
+
+876
+01:42:55.710 --> 01:42:57.259
+100x Engineers: A classifier model.
+
+877
+01:42:57.820 --> 01:43:00.880
+100x Engineers: Plus, a language to get the…
+
+878
+01:43:01.950 --> 01:43:21.399
+100x Engineers: interpretation of the questions, but in order for us to give the output, they're not using the same transformer model which ChatGPT Cloud uses. And because of the output generation happens completely on a different algorithm, I think they have also mentioned about this on their website, so you can also check this.
+
+879
+01:43:21.630 --> 01:43:28.469
+100x Engineers: On the appsafe.ai. So they've mentioned exactly, like, what are the techniques they used.
+
+880
+01:43:29.660 --> 01:43:42.599
+100x Engineers: In my, in my research, I realized that because they are using a different model altogether to give the output probability, not the same language-based transformers, that is where they were able to get much more.
+
+881
+01:43:42.720 --> 01:43:46.639
+100x Engineers: I would say higher accuracy numbers with a lower cost. Yeah.
+
+882
+01:43:47.220 --> 01:43:52.379
+100x Engineers: But again, like, these guys have not released, like, all the technical details of the architecture yet.
+
+883
+01:43:52.560 --> 01:43:58.820
+100x Engineers: I have some papers which I can share with all of you. As I said, I'll maybe like add all those things in the resource sheet as well.
+
+884
+01:43:59.050 --> 01:44:11.099
+100x Engineers: These are the papers which are building models that are similar to Jeff, but in the open source world. There was, in fact, one of the Indian researcher who has built the same model one year ago. Unfortunately.
+
+885
+01:44:11.190 --> 01:44:29.339
+100x Engineers: because he didn't have that strong of marketing, so that way we didn't blow up. I was teaching this part to some of my students last year as well, that maybe there's a better way for us to, like, combine these three things, which is a classifier model, the rule-based system, and the deterministic system.
+
+886
+01:44:29.560 --> 01:44:30.920
+100x Engineers: The LMS right now.
+
+887
+01:44:31.730 --> 01:44:32.470
+100x Engineers: So…
+
+888
+01:44:33.490 --> 01:44:52.810
+100x Engineers: Wanted to know if building mobile app as a solo builder is still meaningful as the space is fully saturated. I completely agree, Vijay. I don't think building mobile apps right now is meaningful at all because I can tell you I've been using Opus 5.5 since it recently launched.
+
+889
+01:44:53.480 --> 01:44:56.050
+100x Engineers: And it's actually, like, much closer to
+
+890
+01:44:56.970 --> 01:45:10.059
+100x Engineers: What, like, one of my, senior, who's, like, I know that he is one of the best mobile developer I know. I started my career, by the way, as a mobile developer. The first thing I built and published was on the Android Play Store.
+
+891
+01:45:10.210 --> 01:45:23.010
+100x Engineers: So I've seen the whole journey, and I also, like, spoken to some of the best people. In fact, I've also spoken to a few folks who have been, like, open source maintainers of Android as a project. And I know that
+
+892
+01:45:23.910 --> 01:45:28.340
+100x Engineers: Today, the models, like Opus 5.5, Fable Astra.
+
+893
+01:45:28.650 --> 01:45:32.009
+100x Engineers: They can actually write much better code than a lot of us.
+
+894
+01:45:32.540 --> 01:45:34.369
+100x Engineers: Again, same question.
+
+895
+01:45:34.530 --> 01:45:35.360
+100x Engineers: Is.
+
+896
+01:45:35.750 --> 01:45:40.389
+100x Engineers: Can we verify what is a good code, or what is maybe, like, acceptable code or not?
+
+897
+01:45:41.280 --> 01:45:49.849
+100x Engineers: In majority of the cases, if you have a clear product requirement, if you have clear test cases, a lot of you who are developers might know about test-driven development.
+
+898
+01:45:51.020 --> 01:46:03.529
+100x Engineers: You can write test cases before you even start writing code. And that test case writing is the same principle of writing verification criteria, which is also what Jev asked you to do. You define the criteria of
+
+899
+01:46:03.650 --> 01:46:09.640
+100x Engineers: What is the possible answer to this question, and how should the model give the answer?
+
+900
+01:46:10.720 --> 01:46:12.410
+100x Engineers: And when you can define that.
+
+901
+01:46:12.680 --> 01:46:32.370
+100x Engineers: you can put a model, you can give it more examples and make it better and better. With mobile apps, a lot of software, this is true, and that is why when you see the verified results on the paper, you will see all the development, especially, like, coding, software development, these are things which are getting, like, highly, highly, I would say.
+
+902
+01:46:34.590 --> 01:46:42.660
+100x Engineers: Automatable, to be precise. So, I completely agree with you. I think… Rather than doing that,
+
+903
+01:46:42.890 --> 01:46:53.369
+100x Engineers: Happy to again help you more Vijay if you are somebody who is still thinking and maybe you are wondering on the second homework which I gave you today, which is list down each and every task that you do.
+
+904
+01:46:53.610 --> 01:47:07.010
+100x Engineers: And put it into three buckets. How verifiable it is. Can you write a simple rule-based system for it? Then use directly code. If you can write a judgment where you can define whether the output is…
+
+905
+01:47:07.790 --> 01:47:12.069
+100x Engineers: Yes and no, it's maybe like a… Option. Or maybe it's…
+
+906
+01:47:12.420 --> 01:47:17.709
+100x Engineers: It's gonna be, like, on a scale, then you can use Jeff. It's gonna be slightly more…
+
+907
+01:47:17.830 --> 01:47:30.790
+100x Engineers: Like deeper than that is going to be language based and you can use LLM models. But if there is no clear criteria to define what is good looks like and what is bad looks like in your work, that stays human.
+
+908
+01:47:31.060 --> 01:47:44.340
+100x Engineers: Because if there is no way to verify the good output, you cannot supply the data, you cannot label the data, and you can't then build the engine for a model to tell that, hey, it has done a good job or a bad job.
+
+909
+01:47:44.340 --> 01:47:52.490
+100x Engineers: And that is the very fundamental principle which I carry, as I say, that when I decide and help somebody to upskill them.
+
+910
+01:47:53.460 --> 01:48:17.619
+100x Engineers: Yeah, this is the first thing which I do also, like when I do onboarding for Analytics Engineers, I just like ask you guys to like write down what is a North Star, what do you guys do? And then help you like go through each and every task that you are doing and see like what all tasks can be automatable immediately today. Let's do that first thing and things which are human in the loop or which basically has no way to verify. You keep upskilling yourself more for those things because I know definitely.
+
+911
+01:48:17.620 --> 01:48:20.580
+100x Engineers: Those are things where we still need human beings.
+
+912
+01:48:20.780 --> 01:48:23.090
+100x Engineers: Because Jevin's paradox.
+
+913
+01:48:23.640 --> 01:48:33.040
+100x Engineers: Now we need, like, more people who can build software, because software is becoming, like, easier to build and publish, but there are still gonna be people who need,
+
+914
+01:48:33.190 --> 01:48:42.679
+100x Engineers: these human judgments, or who are required for these human judgments. And hence, the demand for those people with skills that are not verifiable are going off the roof.
+
+915
+01:48:42.880 --> 01:48:43.600
+100x Engineers: Jeff.
+
+916
+01:48:46.230 --> 01:48:48.689
+100x Engineers: I have two questions. I'm an MBA
+
+917
+01:48:48.800 --> 01:48:51.549
+100x Engineers: Business analytics students, as of now.
+
+918
+01:48:51.750 --> 01:48:52.610
+100x Engineers: Oh.
+
+919
+01:48:52.950 --> 01:48:56.020
+100x Engineers: Happy to meet you. Parth 2.0.
+
+920
+01:48:57.870 --> 01:49:00.420
+100x Engineers: I'm just kidding, Abhishek.
+
+921
+01:49:00.840 --> 01:49:09.929
+100x Engineers: Shaikh said I'm an MBA analytics, business analytics students. As of now, where should I focus more in Excel programming or learning more about LLMs?
+
+922
+01:49:10.070 --> 01:49:13.910
+100x Engineers: I think you have already answered that if you are right now learning.
+
+923
+01:49:14.930 --> 01:49:17.409
+100x Engineers: And I have given this answer to Vijay as well.
+
+924
+01:49:18.140 --> 01:49:27.429
+100x Engineers: Anything which is verifiable. Can you write what is a good output of this Excel file? Can you write what is a good output of this programming job that you are doing? If yes.
+
+925
+01:49:27.960 --> 01:49:34.730
+100x Engineers: I think you have to automate that first. I'm not saying completely remove it, but automate that first, because A that gives you a leverage.
+
+926
+01:49:35.320 --> 01:49:41.350
+100x Engineers: And more confidence that, hey, like, whenever I see more tasks like this, I can automate it, I can make myself more efficient.
+
+927
+01:49:41.480 --> 01:49:47.100
+100x Engineers: And then you will also start looking for tasks which are not automatable at all, and those are tasks where you should.
+
+928
+01:49:47.280 --> 01:49:48.740
+100x Engineers: upskill yourself.
+
+929
+01:49:49.120 --> 01:50:03.100
+100x Engineers: Now, what it looks like exactly for your job, I need more context for that, Abhishek. So if you can maybe send a whole profile of what all things you do, maybe just list on all the tasks, what's your job, and what's the industry you have been.
+
+930
+01:50:03.200 --> 01:50:10.659
+100x Engineers: And you can, like, just scan this code. You don't need to pay anything to me, by the way, for this information. You can just send this information. I'll,
+
+931
+01:50:11.030 --> 01:50:18.800
+100x Engineers: Try to help you to find out that, hey, what all things are automatable, and where you can probably start upskilling yourself.
+
+932
+01:50:18.940 --> 01:50:25.089
+100x Engineers: And if 100X can help you in that, then happy to, like, onboard you as part of our 6-month journey.
+
+933
+01:50:32.540 --> 01:50:42.439
+100x Engineers: Right now, as I said, we don't conduct any specific lectures for anyone else. The only thing which I do is this six-month program, and I take these webinars.
+
+934
+01:50:42.540 --> 01:50:43.440
+100x Engineers: That's all.
+
+935
+01:50:58.990 --> 01:51:08.650
+100x Engineers: Yeah, I think I like the question which Jayal has mentioned, what is the purpose of learning tools right now? Because what he believes, slightly a skeptical approach, by the way.
+
+936
+01:51:08.990 --> 01:51:11.729
+100x Engineers: So he said he believes that in future.
+
+937
+01:51:11.880 --> 01:51:19.739
+100x Engineers: The new tools will come with the better models. And I don't understand learning new tools is worthy. And exactly, I completely agree with you.
+
+938
+01:51:20.250 --> 01:51:24.949
+100x Engineers: In fact, this is one of the core bedrock principles of our whole curriculum.
+
+939
+01:51:25.170 --> 01:51:42.339
+100x Engineers: I don't teach any tools at all. Even today, although I shared the name of the tool, but the principles, if you apply it and you can find right now a lot of other models which does the same thing, it kind of mixes the approach of rule-based system, probabilistic systems, and then classifier system.
+
+940
+01:51:42.550 --> 01:52:00.229
+100x Engineers: And it takes these three approaches, define… help you define the criteria and the question, and you can do that. So Jev is just one of the examples, but there are right now tools, and as I said, like, in next six months, you can see, like, there's gonna be a surge in more of models like this, where people will be using, everything
+
+941
+01:52:00.620 --> 01:52:07.490
+100x Engineers: Which requires a judgment, or maybe a judgment which can be solved by these kind of systems.
+
+942
+01:52:08.140 --> 01:52:12.520
+100x Engineers: So I agree with you, Jael, and I think nobody should actually focus on tools.
+
+943
+01:52:12.630 --> 01:52:31.100
+100x Engineers: In fact, anyone who is teaching you just tools right now, I think you need to be skeptical about that, right? Even whether it's a course, a YouTube video, a tutorial, or maybe even an instructor. I'm a first principle believer, first principles learner. I learn from the principles, and I try to, like, always
+
+944
+01:52:31.230 --> 01:52:35.670
+100x Engineers: Build these mental models and see if these principles stack on top of each other.
+
+945
+01:52:35.920 --> 01:52:40.940
+100x Engineers: So I think then you might resonate with, like, how we have designed the whole curriculum as well.
+
+946
+01:52:52.800 --> 01:52:56.219
+100x Engineers: Yeah, I think Naveen, ramin Kumar Ambati
+
+947
+01:52:56.980 --> 01:53:04.259
+100x Engineers: I think the same answer applies to you as well. Start writing down your task. Automate first things which can be automatable.
+
+948
+01:53:04.340 --> 01:53:17.640
+100x Engineers: Find the task which requires human judgment, upskill yourself in those things. If you want to get a specific task and specific suggestions based on your job, you can scan this QR code and you can let me know more about your job profile. Happy to help you.
+
+949
+01:53:21.210 --> 01:53:25.850
+100x Engineers: Where to send these texts to you? Just scan the code, it'll open the…
+
+950
+01:53:34.380 --> 01:53:35.490
+100x Engineers: Can I take this?
+
+951
+01:53:36.860 --> 01:53:38.089
+100x Engineers: Sorry for that.
+
+952
+01:53:40.990 --> 01:53:42.660
+100x Engineers: You can just keep it outside.
+
+953
+01:54:00.340 --> 01:54:07.680
+100x Engineers: Where can you interact with me more? In the program. As I said, like, the only thing which I do is the webinar and the program, that's all.
+
+954
+01:54:37.680 --> 01:54:55.240
+100x Engineers: I was thinking about using Jev for sales agent security criteria, example to monitor prompt injections, or real-time intent classification. How practical is this? Also, should this be a parallel to LMs? Yes, I think, I'll send you all… everything which I taught you in the…
+
+955
+01:54:55.460 --> 01:54:57.880
+100x Engineers: In the specific part.
+
+956
+01:54:58.220 --> 01:54:59.150
+100x Engineers: But.
+
+957
+01:55:00.230 --> 01:55:13.330
+100x Engineers: There are right now a lot of ways I would say like you should, you should write down the task that you're doing, write down the judgment that you're making to, to make the decisions and that will help you to understand whether.
+
+958
+01:55:13.660 --> 01:55:19.229
+100x Engineers: This entire thing actually is not, which means that whether Jev helps you for
+
+959
+01:55:21.290 --> 01:55:23.669
+100x Engineers: Making those decisions or not, yeah.
+
+960
+01:55:25.260 --> 01:55:34.770
+100x Engineers: Again, happy to help you, like, if you are, I would say not sure exactly what kind of task, where it can help you, you can just, like, send me the list of those tasks,
+
+961
+01:55:35.830 --> 01:55:39.340
+100x Engineers: This is Varshanka. But I've seen a lot of people using this in the sales.
+
+962
+01:55:40.750 --> 01:55:44.940
+100x Engineers: How do you source leads? How do you qualify leads? Those are very…
+
+963
+01:55:46.070 --> 01:55:59.910
+100x Engineers: easy to verifiable decisions, including at 100 Rex right now, we know, because we want to work with very specific people. So I have a criteria of what kind of folks I want to, like, work with for especially a 6-month program, because we have limited bandwidth and limited number of slots for this.
+
+964
+01:55:59.920 --> 01:56:15.779
+100x Engineers: So we do very high qualification here. So those things I have tried right now to automate with Jev because I have the criteria, I write down the questions. These are the five questions based on which I will categorize these people, and that becomes one of the ways for me to do it.
+
+965
+01:56:15.960 --> 01:56:22.030
+100x Engineers: So, yeah, probably like that, you can find the same thing for your sales agent criteria as well.
+
+966
+01:56:46.370 --> 01:56:52.560
+100x Engineers: Yes, Ashish. So, we do have code and no-code tracks, so if you're somebody who is considering
+
+967
+01:56:53.170 --> 01:56:58.199
+100x Engineers: That you have to start learning about these new tools, new principles.
+
+968
+01:56:58.680 --> 01:57:05.299
+100x Engineers: But I don't have the coding knowledge. There is a low-code track which does not require any kind of coding for you.
+
+969
+01:57:05.490 --> 01:57:13.540
+100x Engineers: For people who do have coding experience, we do work with engineers, and I primarily use Python for that.
+
+970
+01:57:13.850 --> 01:57:20.580
+100x Engineers: So, yeah, so coding is not a prerequisite if you want to work with us and build systems.
+
+971
+01:57:24.190 --> 01:57:33.000
+100x Engineers: So Jev is a generalized classifier for the topics we want by providing the judgment criteria. Yes. So you are very close, Arbaz.
+
+972
+01:57:33.000 --> 01:57:50.539
+100x Engineers: Yeah, it's kind of a generalized classifier, but I would not only put it into a category of classifier, because it can make judgments which are beyond classification. Like, it can also tell you which options to choose out of 255 options. It can also help you to
+
+973
+01:57:50.750 --> 01:57:59.179
+100x Engineers: Rate something on a scale of 1 to 10. Now, those things does not fall directly into the classification, but more on the judgment based on the options.
+
+974
+01:57:59.320 --> 01:58:05.229
+100x Engineers: But yes, classification is definitely one part where Jev definitely shines right now.
+
+975
+01:58:05.580 --> 01:58:09.059
+100x Engineers: But I would say, like, it's… it can do more than that as well.
+
+976
+01:58:13.670 --> 01:58:19.650
+100x Engineers: Can you share information about what all things are included for this price in the six-month program?
+
+977
+01:58:27.740 --> 01:58:40.919
+100x Engineers: The price, and the things which we are basically gonna be doing for the 24 weeks of the 6-month program, again, as you can get, like, more information, ashish, if you want, like, very specific
+
+978
+01:58:42.100 --> 01:58:56.339
+100x Engineers: criteria about what all things are going to be relevant for you, rather than me sharing all the things that are available. You can reach out to our team through this code, you can scan this, you can ask for more information. But I'll just tell this to everybody.
+
+979
+01:58:56.620 --> 01:59:00.390
+100x Engineers: Quickly on a note that how we have structured the whole program.
+
+980
+01:59:01.300 --> 01:59:08.860
+100x Engineers: As I said, it's gonna be all live learning. There is probably, I would say, less than 10%, or even, like, almost, like.
+
+981
+01:59:09.840 --> 01:59:24.709
+100x Engineers: 5% parts of which, where I will ask you, you need to watch a video, or you need to, like, do something pre-recorded. But 90-95% of the times, it'll be live. So you'll be, like, watching me live, you'll be building things live, you'll be coming on the
+
+982
+01:59:24.710 --> 01:59:32.210
+100x Engineers: Sessions, both, on the weekdays and weekends, and you'll be, like, doing something.
+
+983
+01:59:33.810 --> 01:59:40.560
+100x Engineers: And that is going to be on your work, that's going to be on your idea, that's going to be something which you can take away and maybe apply in your job.
+
+984
+01:59:41.880 --> 01:59:58.650
+100x Engineers: The way we carry it into three parts, the first module is the visual part of GenAI, where we teach about images and videos, how these image models work, video models work, and how these could be helpful for folks. Then the second module, we teach about LLMs in the full stack.
+
+985
+01:59:58.880 --> 02:00:12.929
+100x Engineers: where I… so this is where I start taking lectures. The first module is taken by my co-founder, and the second and third is where, like, we go… building these MBA systems, tools like Jev
+
+986
+02:00:13.320 --> 02:00:20.799
+100x Engineers: Building the APS deterministic layers, the probabilist layers and to design where human in the loop should stays.
+
+987
+02:00:21.030 --> 02:00:40.089
+100x Engineers: And then lastly, we move to the AI agents and automation, using everything that we have learned, like how to build better agents, agent harnesses, deploying these agents in production. So those are the things that we do. This is the whole 3-month journey, sorry, 3-module but 6-month journey. And, along with that, we realized that
+
+988
+02:00:40.180 --> 02:00:43.579
+100x Engineers: There are some things which you're gonna be needing for this whole thing.
+
+989
+02:00:44.230 --> 02:00:47.550
+100x Engineers: The first part is the GPU. If you do not have a very strong
+
+990
+02:00:47.670 --> 02:01:07.659
+100x Engineers: laptop, working with especially video models and image model is very compute intensive, which means you need minimum 16 GB of VRAM, and you need a solid GPU on your machine, which can, like, run these models, probably fine-tune these models, because we work with a lot of open source models.
+
+991
+02:01:07.920 --> 02:01:16.390
+100x Engineers: In fact, everything which I teach in the course is model agnostic, but I start teaching and start, using examples from the open source world.
+
+992
+02:01:16.640 --> 02:01:36.530
+100x Engineers: to run these open source models, you need a hardware, and to get the hardware, we have partnered up with a company, so you all will get 200 hours of Cloud GPU credits if you decide to, like, enroll this. This is also part of the whole cost. There is nothing extra which you need to pay to get access to any kind of machine, tool, or any third-party such system.
+
+993
+02:01:38.260 --> 02:01:51.650
+100x Engineers: You also get access to the upcoming updates. I know because I keep changing my curriculum almost every 15 to 20 days. We are one of the most up-to-date curriculum in the world, recognized by Meta and OpenAI at this moment.
+
+994
+02:01:51.720 --> 02:02:04.779
+100x Engineers: And we keep changing curriculum because we know the models are changing, the tools are changing, and the principles are also changing, which tells us how to build things, right? What I learned from Jev, I think I'm definitely gonna, like, keep with me and build solutions
+
+995
+02:02:04.900 --> 02:02:13.379
+100x Engineers: where the judgment does not require the LM-level reasoning, because I can… I can, like, decide the criteria for those questions.
+
+996
+02:02:13.990 --> 02:02:19.219
+100x Engineers: So that actually changed, like, how I'm gonna now structure the next cohort, which is the cohort 9.
+
+997
+02:02:19.590 --> 02:02:38.309
+100x Engineers: So all of those things you will get as an access. So if you join Cohort 9, you will also get the recordings and all the updates that we are making, the changes we are making for the Cohort 10 and Cohort 11. So, which means that I'm gonna get, like, the next one year worth of supply of all the new information updates.
+
+998
+02:02:38.770 --> 02:02:44.700
+100x Engineers: With the same price. You don't need, like, get in the program again and again. We'll send you the updates.
+
+999
+02:02:44.850 --> 02:02:54.630
+100x Engineers: I think, but even biggest than that is the lifetime access community. We have people, and majority of the folks, if I just give you, like, a quick stat, around,
+
+1000
+02:02:56.470 --> 02:03:00.279
+100x Engineers: 31 years old. This is the average age of the cohort in the last one.
+
+1001
+02:03:00.310 --> 02:03:16.520
+100x Engineers: we had an oldest learner who was 73 years old, we have the youngest one, 15 years. Median years of experience was 8 years. And you can see, like, most people who end up working with me, and even, like, I want to, like, work with, like, people who have some kind of idea about what they're doing, and some kind of experience in their domain.
+
+1002
+02:03:16.650 --> 02:03:21.910
+100x Engineers: Because I believe that the folks who have gotten the most value out of these kind of programs.
+
+1003
+02:03:22.170 --> 02:03:31.760
+100x Engineers: because they are serious. They want to build things. They can see the impact, and they are ready to like, I would say, like, in the effort.
+
+1004
+02:03:32.630 --> 02:03:34.299
+100x Engineers: So you can,
+
+1005
+02:03:40.010 --> 02:03:42.660
+100x Engineers: Get all of this along with the GPUs.
+
+1006
+02:03:43.230 --> 02:03:49.319
+100x Engineers: The six-month program, and also access to the next two updates in the recorded format.
+
+1007
+02:03:49.460 --> 02:03:50.600
+100x Engineers: Along with this…
+
+1008
+02:04:10.280 --> 02:04:19.179
+100x Engineers: Okay, I'll take one last question. If you have still more questions, I know I can see, like, a lot more people. Unfortunately, I can't answer every one right now, but
+
+1009
+02:04:19.210 --> 02:04:32.359
+100x Engineers: I'll try to, like, help you guys as much as I can. The only way to reach out to me right now is through the QR, and this QR will lead you to the WhatsApp, so this is the team-wide WhatsApp that we use.
+
+1010
+02:04:32.360 --> 02:04:41.759
+100x Engineers: So all the information, all the things, questions you have, you can send me here, and I'll be able to, like, see, like, whatever we can help in terms of getting you clarity.
+
+1011
+02:04:41.840 --> 02:04:43.650
+100x Engineers: Whether we can help you or not.
+
+1012
+02:04:47.310 --> 02:04:49.839
+100x Engineers: I'll take this one last question from Arvind.
+
+1013
+02:04:51.450 --> 02:04:56.850
+100x Engineers: Arvind said I was keen to understand what the first principle is about because I've heard it too many times.
+
+1014
+02:04:57.310 --> 02:05:09.780
+100x Engineers: and never figured out the legal understanding. Arvind, I hope you got it right now. Just to repeat for Arvind and for everyone else, the first principles that we had discussed in this whole bit was these.
+
+1015
+02:05:12.000 --> 02:05:16.010
+100x Engineers: And I'll share, by the way, all of this With you guys.
+
+1016
+02:05:18.860 --> 02:05:26.679
+100x Engineers: These three things… Which is a result of a problem that existing models cannot solve.
+
+1017
+02:05:26.990 --> 02:05:31.130
+100x Engineers: Existing models, or existing flows that we have tried.
+
+1018
+02:05:31.520 --> 02:05:35.609
+100x Engineers: Rules are brittle. LMs are slow and costly at volume.
+
+1019
+02:05:35.750 --> 02:05:42.539
+100x Engineers: They hallucinate, they have fake confidence. Classifiers can only solve one model per question.
+
+1020
+02:05:43.940 --> 02:05:45.880
+100x Engineers: These were the problems.
+
+1021
+02:05:46.140 --> 02:05:57.290
+100x Engineers: First principles… our first principle thinking is about deriving solution from the problem. So this was a problem that we had, and we derived the solution through these problems by
+
+1022
+02:05:57.480 --> 02:05:59.410
+100x Engineers: Giving these three things.
+
+1023
+02:05:59.600 --> 02:06:05.820
+100x Engineers: To a model that can do all three parts. It can understand The state.
+
+1024
+02:06:06.380 --> 02:06:08.799
+100x Engineers: Is the thing that is being judged.
+
+1025
+02:06:09.380 --> 02:06:13.720
+100x Engineers: And you categorize it into three parts of state questionnaire criteria.
+
+1026
+02:06:14.190 --> 02:06:25.730
+100x Engineers: You write the question, you write the criteria, you define how you judge this thing. If you can define, if you can write the criteria to verify it, you can start using the model like Jev.
+
+1027
+02:06:26.440 --> 02:06:29.559
+100x Engineers: And once you do this, this becomes one of the way how you…
+
+1028
+02:06:29.670 --> 02:06:32.360
+100x Engineers: Change your workflows about building it.
+
+1029
+02:06:36.650 --> 02:06:44.410
+100x Engineers: This was an additional detail about the questions, which is also, I believe, like, kind of, like, a very unique way of categorizing
+
+1030
+02:06:45.620 --> 02:06:47.160
+100x Engineers: Conditional statements.
+
+1031
+02:06:47.420 --> 02:06:55.860
+100x Engineers: And I would say like a really good job, especially in this section where classified every single conditional decision.
+
+1032
+02:06:56.070 --> 02:07:15.889
+100x Engineers: to these three parts. Either it's a yes or no question, or it's a choice question, where you can choose options up to 255, or you can, scale… how do you do it on a scale? And these are the first principles I want all of you to take away, along with everything that I'm going to share with you, but,
+
+1033
+02:07:15.920 --> 02:07:19.209
+100x Engineers: I hope you got something out of it, and I hope you learned something. This was…
+
+1034
+02:07:19.360 --> 02:07:24.560
+100x Engineers: Vijay VAI Masterclass of MONITEX Engineers Thank you so much for your time and attention and I'll see you soon.
+
+1035
+02:07:24.710 --> 02:07:25.510
+100x Engineers: Bye bye.

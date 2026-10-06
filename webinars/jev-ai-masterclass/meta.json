@@ -1,0 +1,213 @@
+{
+  "title": "Building Workflows with Jev AI",
+  "subtitle": "100x Engineers masterclass · Sep 27, 2026",
+  "duration": 7646.96,
+  "video": "video.mp4",
+  "captions": "captions.vtt",
+  "silences": "silences.json",
+  "chapters": [
+    {
+      "start": "00:00:00",
+      "title": "Waiting room & intro music",
+      "tag": "filler"
+    },
+    {
+      "start": "00:09:10",
+      "title": "Welcome & mood poll",
+      "tag": "filler"
+    },
+    {
+      "start": "00:11:03",
+      "title": "Speaker intro (Siddhant Goswami, 100x Engineers) & agenda"
+    },
+    {
+      "start": "00:12:56",
+      "title": "Audience roll call",
+      "tag": "filler"
+    },
+    {
+      "start": "00:14:36",
+      "title": "Case study: Arav's 400 weekly invoices"
+    },
+    {
+      "start": "00:16:34",
+      "title": "Exercise: does the invoice match the purchase order?"
+    },
+    {
+      "start": "00:18:49",
+      "title": "Attempt 1: rule-based if-statements"
+    },
+    {
+      "start": "00:21:52",
+      "title": "Why string matching breaks (\"Tomato A grade\" vs \"Tomatoes, grade A\")"
+    },
+    {
+      "start": "00:24:43",
+      "title": "Homework: write down a conditional you've used"
+    },
+    {
+      "start": "00:29:03",
+      "title": "Week by week: how the rules turn brittle"
+    },
+    {
+      "start": "00:32:10",
+      "title": "Attempt 2: an LLM call with structured output (Claude Sonnet 5)"
+    },
+    {
+      "start": "00:34:22",
+      "title": "The problem: LLM confidence scores are fake"
+    },
+    {
+      "start": "00:37:32",
+      "title": "Recap of the problem so far"
+    },
+    {
+      "start": "00:39:14",
+      "title": "Attempt 3: training classifiers (one model per question)"
+    },
+    {
+      "start": "00:42:15",
+      "title": "Why all three fail and the need for a hybrid"
+    },
+    {
+      "start": "00:43:58",
+      "title": "Introducing Jev AI"
+    },
+    {
+      "start": "00:45:10",
+      "title": "The Jev API: state, question, criteria"
+    },
+    {
+      "start": "00:48:20",
+      "title": "Output: a probability, not generated text"
+    },
+    {
+      "start": "00:49:21",
+      "title": "Jev playground walkthrough (console.typesafe.ai)"
+    },
+    {
+      "start": "00:51:27",
+      "title": "Benchmark: Jev vs Claude Sonnet 5 on speed & cost"
+    },
+    {
+      "start": "00:53:47",
+      "title": "First principles recap"
+    },
+    {
+      "start": "00:55:20",
+      "title": "Three question types: yes/no, choice (up to 255 options), score"
+    },
+    {
+      "start": "00:58:36",
+      "title": "Quiz: classify your own if-statement"
+    },
+    {
+      "start": "00:59:57",
+      "title": "Jev's limits: your code owns decisions, questions run in parallel only, confidence isn't a guarantee"
+    },
+    {
+      "start": "01:04:04",
+      "title": "Jev covers rules, models & classifiers; vague questions just fail faster"
+    },
+    {
+      "start": "01:04:55",
+      "title": "Framework: split each decision into code / Jev / human"
+    },
+    {
+      "start": "01:07:38",
+      "title": "Human in the loop & the Verifier's Rule"
+    },
+    {
+      "start": "01:10:58",
+      "title": "Hard-to-verify tasks (what makes a video go viral?)"
+    },
+    {
+      "start": "01:12:07",
+      "title": "Putting it together: humans + models + code"
+    },
+    {
+      "start": "01:13:30",
+      "title": "Free post-session resources",
+      "tag": "promo"
+    },
+    {
+      "start": "01:14:24",
+      "title": "Principles over tools; before vs after"
+    },
+    {
+      "start": "01:15:34",
+      "title": "Cheaper judgment & Jevons Paradox"
+    },
+    {
+      "start": "01:19:45",
+      "title": "Key takeaway: \"Can I write the verifier?\""
+    },
+    {
+      "start": "01:21:21",
+      "title": "Session recap"
+    },
+    {
+      "start": "01:23:03",
+      "title": "Pitch: why practice with a cohort",
+      "tag": "promo"
+    },
+    {
+      "start": "01:24:29",
+      "title": "Speaker's backstory & the education system",
+      "tag": "promo"
+    },
+    {
+      "start": "01:29:31",
+      "title": "Student success stories",
+      "tag": "promo"
+    },
+    {
+      "start": "01:36:22",
+      "title": "100x Engineers program: logistics & pricing",
+      "tag": "promo"
+    },
+    {
+      "start": "01:41:27",
+      "title": "Q&A: how Jev differs from LLMs under the hood"
+    },
+    {
+      "start": "01:44:33",
+      "title": "Q&A: is it still worth building mobile apps solo?"
+    },
+    {
+      "start": "01:48:46",
+      "title": "Q&A: MBA student — focus on Excel/programming or on LLMs?"
+    },
+    {
+      "start": "01:50:58",
+      "title": "Q&A: is learning tools worth it?"
+    },
+    {
+      "start": "01:54:37",
+      "title": "Q&A: Jev for sales-agent security & lead qualification"
+    },
+    {
+      "start": "01:56:46",
+      "title": "Q&A: code vs no-code tracks",
+      "tag": "promo"
+    },
+    {
+      "start": "01:57:24",
+      "title": "Q&A: is Jev a generalized classifier?"
+    },
+    {
+      "start": "01:58:13",
+      "title": "Q&A: what the program includes",
+      "tag": "promo"
+    },
+    {
+      "start": "02:04:47",
+      "title": "Final question: what \"first principles\" means, plus final recap"
+    },
+    {
+      "start": "02:07:19",
+      "title": "Close",
+      "tag": "filler"
+    }
+  ]
+}

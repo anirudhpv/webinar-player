@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webinar Player</title>
+<style>
+  :root {
+    --bg: #0f0f10; --panel: #18181b; --line: #2a2a2e; --text: #ececf0; --muted: #9a9aa3;
+    --accent: #ff3b3b; --track: rgba(255,255,255,.22); --buffer: rgba(255,255,255,.38);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 20px; max-width: 1600px; margin: 0 auto; padding: 20px; }
+  @media (max-width: 1000px) { .wrap { grid-template-columns: 1fr; } }
+  h1 { font-size: 18px; margin: 14px 0 2px; }
+  .sub { color: var(--muted); font-size: 13px; }
+
+  .player { position: relative; background: #000; border-radius: 10px; overflow: hidden; }
+  video { display: block; width: 100%; max-height: 78vh; background: #000; cursor: pointer; }
+  .controls { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 12px 8px;
+    background: linear-gradient(transparent, rgba(0,0,0,.85)); transition: opacity .25s; }
+  .player.idle .controls { opacity: 0; }
+  .player.idle { cursor: none; }
+
+  .seek { position: relative; height: 18px; display: flex; align-items: center; cursor: pointer; }
+  .segs { position: absolute; left: 0; right: 0; height: 4px; display: flex; gap: 2px; transition: height .12s; }
+  .seek:hover .segs { height: 7px; }
+  .seg { position: relative; height: 100%; background: var(--track); overflow: hidden; transition: transform .12s; }
+  .seg.hover { transform: scaleY(1.6); }
+  .seg .buf, .seg .fill { position: absolute; inset: 0 auto 0 0; width: 0; }
+  .seg .buf { background: var(--buffer); }
+  .seg .fill { background: var(--accent); }
+  .knob { position: absolute; width: 13px; height: 13px; border-radius: 50%; background: var(--accent);
+    transform: translateX(-50%) scale(0); transition: transform .12s; pointer-events: none; }
+  .seek:hover .knob, .seek.drag .knob { transform: translateX(-50%) scale(1); }
+
+  .tip { position: absolute; bottom: 26px; transform: translateX(-50%); background: rgba(20,20,22,.95);
+    border: 1px solid var(--line); padding: 6px 10px; border-radius: 6px; white-space: nowrap; pointer-events: none;
+    opacity: 0; transition: opacity .1s; text-align: center; max-width: 340px; }
+  .tip .t-name { font-weight: 600; white-space: normal; }
+  .tip .t-time { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .seek:hover .tip, .seek.drag .tip { opacity: 1; }
+
+  .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-top: 4px; }
+  .bar button { background: none; border: 0; color: var(--text); cursor: pointer; padding: 6px; border-radius: 6px;
+    display: grid; place-items: center; font: inherit; }
+  .bar button:hover { background: rgba(255,255,255,.12); }
+  .bar svg { width: 22px; height: 22px; fill: currentColor; }
+  .time { font-variant-numeric: tabular-nums; color: #ddd; }
+  .cur-chap { color: #ddd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; flex: 1; }
+  .cur-chap::before { content: "• "; color: var(--muted); }
+  input[type=range] { width: 80px; accent-color: #fff; }
+  .rate { font-size: 13px; min-width: 42px; }
+  .cc.on { color: var(--accent); }
+
+  aside { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; display: flex; flex-direction: column; max-height: calc(100vh - 40px); position: sticky; top: 20px; }
+  aside header { padding: 14px 16px 10px; border-bottom: 1px solid var(--line); }
+  aside header b { font-size: 15px; }
+  aside input { width: 100%; margin-top: 10px; padding: 7px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; }
+  ol { list-style: none; margin: 0; padding: 6px; overflow-y: auto; }
+  li { display: grid; grid-template-columns: 64px 1fr; gap: 8px; padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+  li:hover { background: rgba(255,255,255,.06); }
+  li.active { background: rgba(255,59,59,.14); }
+  li.active .ts { color: var(--accent); }
+  li .ts { color: #6aa7ff; font-variant-numeric: tabular-nums; font-size: 13px; }
+  li .dur { display: block; color: var(--muted); font-size: 12px; }
+  li.hide { display: none; }
+  .pill { font-size: 12.5px !important; padding: 5px 10px !important; border: 1px solid rgba(255,255,255,.3) !important; border-radius: 999px !important; white-space: nowrap; }
+  .pill.on { background: #fff !important; color: #111 !important; border-color: #fff !important; }
+  .saved { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  :root { --promo: #f5a524; }
+  .flag .seg.tagged { background: rgba(245,165,36,.45); }
+  .flag .seg.tagged .fill { background: var(--promo); }
+  .t-tag { color: var(--promo); font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  .t-tag:empty { display: none; }
+  .badge { display: none; margin-left: 8px; padding: 0 6px; border-radius: 4px; font-size: 11px; background: rgba(245,165,36,.18); color: var(--promo); }
+  .flag li.tagged .badge { display: inline-block; }
+  .flag li.tagged { opacity: .55; box-shadow: inset 3px 0 0 var(--promo); }
+  .flag li.tagged:hover, .flag li.active { opacity: 1; }
+  .legend { display: none; margin-top: 8px; font-size: 12px; color: var(--muted); }
+  .flag .legend { display: block; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--promo); vertical-align: -1px; margin-right: 4px; }
+  .caption { position: absolute; left: 50%; bottom: 74px; transform: translateX(-50%); max-width: 82%; text-align: center;
+    background: rgba(0,0,0,.78); color: #fff; font-size: clamp(14px, 1.6vw, 22px); line-height: 1.35; padding: 4px 10px; border-radius: 4px;
+    pointer-events: none; transition: bottom .25s; }
+  .caption:empty, .caption.off { display: none; }
+  .player.idle .caption { bottom: 24px; }
+  [hidden] { display: none !important; }
+  #library { display: none; max-width: 760px; margin: 0 auto; padding: 32px 20px; }
+  .library-mode #library { display: block; }
+  .library-mode .wrap { display: none; }
+  #library h1 { font-size: 22px; margin: 0 0 16px; }
+  .card { display: block; padding: 14px 16px; margin-bottom: 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--text); text-decoration: none; }
+  .card:hover { border-color: #555; }
+  .card .sub { display: block; margin-top: 2px; }
+  code { background: var(--panel); padding: 1px 5px; border-radius: 4px; }
+  .err { padding: 40px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="library"></div>
+<div class="wrap">
+  <main>
+    <div class="player" id="player">
+      <video id="v" preload="metadata"></video>
+      <div class="caption" id="caption"></div>
+      <div class="controls">
+        <div class="seek" id="seek">
+          <div class="segs" id="segs"></div>
+          <div class="knob" id="knob"></div>
+          <div class="tip" id="tip"><div class="t-tag"></div><div class="t-name"></div><div class="t-time"></div></div>
+        </div>
+        <div class="bar">
+          <button id="play" title="Play (k)"><svg viewBox="0 0 24 24"><path id="playIcon" d="M8 5v14l11-7z"/></svg></button>
+          <button id="back" title="Back 10s (j / ←)"><svg viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6 8.5 6zm.5-6 8.5 6V6l-8.5 6z"/></svg></button>
+          <button id="fwd" title="Forward 10s (l / →)"><svg viewBox="0 0 24 24"><path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/></svg></button>
+          <button id="mute" title="Mute (m)"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z"/></svg></button>
+          <input type="range" id="vol" min="0" max="1" step="0.05" value="1" title="Volume">
+          <span class="time" id="time">0:00:00 / 0:00:00</span>
+          <span class="cur-chap" id="curChap"></span>
+          <button class="pill" id="skipBtn" title="Skip silent pauses (s)">Skip silence</button>
+          <button class="pill" id="marginBtn" title="Leave extra time around each pause so soft syllables aren\'t clipped"></button>
+          <button class="pill" id="longBtn" title="What to do with pauses longer than 1.2 s">Long pauses: 8×</button>
+          <button class="pill" id="flagBtn" title="Mark promo & filler sections (p)">Flag promos</button>
+          <button class="rate" id="rate" title="Playback speed">1×</button>
+          <button class="cc" id="ccBtn" title="Captions (c)"><svg viewBox="0 0 24 24"><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-8 7H9.5v-.5h-2v3h2V13H11v1a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1zm7 0h-1.5v-.5h-2v3h2V13H18v1a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1z"/></svg></button>
+          <button id="fs" title="Fullscreen (f)"><svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <h1 id="title"></h1>
+    <div class="sub" id="subtitle"></div>
+  </main>
+
+  <aside>
+    <header><b>Chapters</b> <span class="sub" id="count"></span>
+      <input id="filter" placeholder="Filter chapters…">
+      <div class="legend" id="legend"><i></i>Less relevant: course promotion or filler</div>
+      <div class="saved" id="saved"></div></header>
+    <ol id="list"></ol>
+  </aside>
+</div>
+
+<script src="player.js"></script>
+</body>
+</html>
